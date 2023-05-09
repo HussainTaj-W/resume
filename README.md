@@ -13,6 +13,8 @@ A resume / portfolio / cv made in React.
 
 Go to [./src/data](./src/data) and populate the JSONs with your information.
 
+> Use [formspree.io](formspree.io/) to create an id for your contact form.
+
 ### Run locally
 
 Clone this repo and run the following commands to start the dev server.
