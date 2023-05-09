@@ -6,7 +6,6 @@
 
 A resume / portfolio / cv made in React.
 
-
 ## Getting Started
 
 ### Add your information
@@ -47,8 +46,8 @@ This repo comes with a workflow to make it easy to make changes and deploy them 
 
 ### Changing Styles
 
-You can find the two primary colors under [./src/styles/_colors.scss](./src/styles/_colors.scss). We don't have much else yet.
+You can find the two primary colors under [./src/styles/\_colors.scss](./src/styles/_colors.scss). We don't have much else yet.
 
 # Contributing
 
-There are no formal guidelines for contributing. Feel free to open issues, discussions, PRs etc. 
+There are no formal guidelines for contributing. Feel free to open issues, discussions, PRs etc.
