@@ -50,9 +50,9 @@ jobs:
       - name: Commit and push changes to target repository
         uses: EndBug/add-and-commit@v9
         with:
-          message: "Update build"
+          message: Update build ${{ github.run_id }}
           add: "."
           push: true
-          directory: "deploy-repo"
+          cwd: "deploy-repo"
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_REPO_TOKEN }}
