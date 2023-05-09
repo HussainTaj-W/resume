@@ -29,12 +29,16 @@ jobs:
       - name: Build app
         run: npm run build
 
+      - name: Authenticate SSH
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_REPO_TOKEN }}
+
       - name: Clone target repository
         uses: actions/checkout@v3
         with:
           repository: ${{ secrets.DEPLOY_REPO }}
           ref: main
-          token: ${{ secrets.DEPLOY_REPO_TOKEN }}
           path: deploy-repo
 
       - name: Delete old build files
