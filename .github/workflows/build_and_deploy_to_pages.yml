@@ -47,6 +47,12 @@ jobs:
       - name: Copy build files to target repository
         run: cp -R dist/* deploy-repo
 
+      - name: Get repo name
+        env:
+          REPO_URL: ${{ secrets.DEPLOY_REPO }}
+        id: repo_url
+        run: echo "::set-output name=repo_name::${REPO_URL##*/}"
+
       - name: Commit and push changes to target repository
         uses: EndBug/add-and-commit@v9
         with:
@@ -54,3 +60,5 @@ jobs:
           add: "."
           push: true
           cwd: "deploy-repo"
+        env:
+          BASE_SITE_URL: /${{ steps.repo_url.outputs.repo_name }}/
