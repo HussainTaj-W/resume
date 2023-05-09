@@ -1,0 +1,46 @@
+@import "@/styles/_colors";
+
+.entry {
+  $circle-height: min(max(20vw, 50px), 10rem);
+  $circle-width: calc($circle-height / 2);
+
+  position: relative;
+  padding-left: calc($circle-width + calc($circle-width * 0.2));
+
+  margin-bottom: 10vh;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: calc(calc($circle-height / -2) + 1em);
+    left: 0;
+    width: $circle-width;
+    height: $circle-height;
+    display: inline-block;
+    border-radius: 0 $circle-width $circle-width 0;
+  }
+
+  &:first-child {
+    padding-left: 0;
+    margin-bottom: 0;
+
+    &::before {
+      background: transparent !important;
+    }
+  }
+
+  &:nth-child(2n) {
+    &::before,
+    & :global(.timeline-entry)::before {
+      background-color: $primary-color-1;
+    }
+  }
+
+  &:nth-child(2n + 1) {
+    &::before,
+    & :global(.timeline-entry)::before {
+      background-color: $primary-color-2;
+    }
+  }
+}

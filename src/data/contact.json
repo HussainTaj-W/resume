@@ -1,0 +1,44 @@
+{
+  "messageMe": {
+    "id": "abc",
+    "response": "Thank you! I'll revert to you as soon as I can."
+  },
+  "channels": [
+    {
+      "name": "Phone",
+      "address": "+1234567890",
+      "uri": "tel:+1234567890",
+      "image": {
+        "src": "https://i.imgur.com/CwfKTR8.png",
+        "alt": "Phone Number Icon"
+      }
+    },
+    {
+      "name": "Email",
+      "address": "example@example.com",
+      "uri": "mailto:example@example.com?subject=Resume&body=Hello,",
+      "image": {
+        "src": "https://i.imgur.com/iIifhGs.png",
+        "alt": "Email Address Icon"
+      }
+    },
+    {
+      "name": "GitHub",
+      "address": "github.com/user",
+      "uri": "https://www.github.com",
+      "image": {
+        "src": "https://i.imgur.com/EnM9omZ.png",
+        "alt": "GitHub Icon"
+      }
+    },
+    {
+      "name": "LinkedIn",
+      "address": "linkedin.com/user",
+      "uri": "https://www.linkedin.com",
+      "image": {
+        "src": "https://i.imgur.com/53V0L9S.png",
+        "alt": "LinkedIn Icon"
+      }
+    }
+  ]
+}

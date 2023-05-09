@@ -1,0 +1,10 @@
+{
+  "name": "Alex Johnson",
+  "title": "Software Engineer",
+  "years": "3 Years",
+  "tagline": "Engineering innovation through passion and dedication.",
+  "image": {
+    "src": "https://img.freepik.com/premium-psd/3d-cartoon-character-avatar-isolated-3d-rendering_235528-554.jpg",
+    "alt": "Alex Johnson photo"
+  }
+}

@@ -1,0 +1,24 @@
+@import "@/styles/_colors";
+
+.card {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    $circle-size: 70px;
+
+    content: "";
+    width: $circle-size;
+    height: $circle-size;
+    background-color: $primary-color-1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: $circle-size 0 0 0;
+  }
+
+  img {
+    aspect-ratio: 1;
+    border-radius: 100%;
+  }
+}

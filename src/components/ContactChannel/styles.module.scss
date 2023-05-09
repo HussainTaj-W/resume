@@ -1,0 +1,14 @@
+@import "@/styles/_colors";
+
+.channel a {
+  color: $primary-color-2;
+  text-decoration-color: $primary-color-2;
+
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    color: $primary-color-2;
+    text-decoration-color: $primary-color-2;
+  }
+}

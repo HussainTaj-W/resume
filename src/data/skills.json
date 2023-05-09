@@ -1,0 +1,422 @@
+[
+  {
+    "category": "Technical",
+    "skills": [
+      {
+        "id": 1,
+        "name": "Python",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Python"
+        },
+        "score": 90,
+        "level": "Expert"
+      },
+      {
+        "id": 2,
+        "name": "Java",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Java"
+        },
+        "score": 85,
+        "level": "Advanced"
+      },
+      {
+        "id": 3,
+        "name": "C++",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "C++"
+        },
+        "score": 80,
+        "level": "Advanced"
+      },
+      {
+        "id": 4,
+        "name": "JavaScript",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "JavaScript"
+        },
+        "score": 85,
+        "level": "Advanced"
+      },
+      {
+        "id": 5,
+        "name": "HTML",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "HTML"
+        },
+        "score": 95,
+        "level": "Expert"
+      },
+      {
+        "id": 6,
+        "name": "CSS",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "CSS"
+        },
+        "score": 90,
+        "level": "Expert"
+      },
+      {
+        "id": 7,
+        "name": "React",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "React"
+        },
+        "score": 80,
+        "level": "Advanced"
+      },
+      {
+        "id": 8,
+        "name": "Angular",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Angular"
+        },
+        "score": 75,
+        "level": "Intermediate"
+      },
+      {
+        "id": 9,
+        "name": "Node.js",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Node.js"
+        },
+        "score": 85,
+        "level": "Advanced"
+      },
+      {
+        "id": 10,
+        "name": "Express.js",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Express.js"
+        },
+        "score": 80,
+        "level": "Advanced"
+      },
+      {
+        "id": 11,
+        "name": "MongoDB",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "MongoDB"
+        },
+        "score": 85,
+        "level": "Advanced"
+      },
+      {
+        "id": 11,
+        "name": "MongoDB",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "MongoDB"
+        },
+        "score": 75,
+        "level": "Advanced"
+      },
+      {
+        "id": 12,
+        "name": "React Native",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "React Native"
+        },
+        "score": 80,
+        "level": "Advanced"
+      },
+      {
+        "id": 13,
+        "name": "AngularJS",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "AngularJS"
+        },
+        "score": 60,
+        "level": "Intermediate"
+      },
+      {
+        "id": 14,
+        "name": "Bootstrap",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Bootstrap"
+        },
+        "score": 85,
+        "level": "Advanced"
+      },
+      {
+        "id": 15,
+        "name": "Git",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Git"
+        },
+        "score": 90,
+        "level": "Expert"
+      },
+      {
+        "id": 16,
+        "name": "MySQL",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "MySQL"
+        },
+        "score": 85,
+        "level": "Advanced"
+      },
+      {
+        "id": 17,
+        "name": "PostgreSQL",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "PostgreSQL"
+        },
+        "score": 75,
+        "level": "Advanced"
+      },
+      {
+        "id": 18,
+        "name": "Oracle",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Oracle"
+        },
+        "score": 70,
+        "level": "Intermediate"
+      },
+      {
+        "id": 19,
+        "name": "PHP",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "PHP"
+        },
+        "score": 80,
+        "level": "Advanced"
+      },
+      {
+        "id": 20,
+        "name": "C#",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "C#"
+        },
+        "score": 75,
+        "level": "Advanced"
+      },
+      {
+        "id": 21,
+        "name": "Scala",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Scala"
+        },
+        "score": 70,
+        "level": "Intermediate"
+      },
+      {
+        "id": 22,
+        "name": "Swift",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Swift"
+        },
+        "score": 65,
+        "level": "Intermediate"
+      },
+      {
+        "id": 23,
+        "name": "Kotlin",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Kotlin"
+        },
+        "score": 60,
+        "level": "Intermediate"
+      },
+      {
+        "id": 24,
+        "name": "Unity",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Unity"
+        },
+        "score": 70,
+        "level": "Intermediate"
+      },
+      {
+        "id": 25,
+        "name": "Unreal Engine",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Unreal Engine"
+        },
+        "score": 60,
+        "level": ""
+      },
+      {
+        "id": 26,
+        "name": "OpenGL",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "OpenGL"
+        },
+        "score": 75,
+        "level": "Advanced"
+      },
+      {
+        "id": 27,
+        "name": "Docker",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Docker"
+        },
+        "score": 70,
+        "level": ""
+      },
+      {
+        "id": 28,
+        "name": "React Native",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "React Native"
+        },
+        "score": 65,
+        "level": "Intermediate"
+      },
+      {
+        "id": 29,
+        "name": "Vue.js",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Vue.js"
+        },
+        "score": 60,
+        "level": "Intermediate"
+      },
+      {
+        "id": 30,
+        "name": "RabbitMQ",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "RabbitMQ"
+        },
+        "score": 55,
+        "level": ""
+      }
+    ]
+  },
+  {
+    "category": "Interpersonal",
+    "skills": [
+      {
+        "id": 1,
+        "name": "Communication",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Communication"
+        },
+        "score": null,
+        "level": "Expert"
+      },
+      {
+        "id": 2,
+        "name": "Teamwork",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Teamwork"
+        },
+        "score": null,
+        "level": ""
+      },
+      {
+        "id": 3,
+        "name": "Leadership",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Leadership"
+        },
+        "score": null,
+        "level": "Advanced"
+      },
+      {
+        "id": 4,
+        "name": "Problem-solving",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Problem-solving"
+        },
+        "score": null,
+        "level": null
+      },
+      {
+        "id": 5,
+        "name": "Critical thinking",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Critical thinking"
+        },
+        "score": null,
+        "level": null
+      },
+      {
+        "id": 6,
+        "name": "Time management",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Time management"
+        },
+        "score": null,
+        "level": null
+      },
+      {
+        "id": 7,
+        "name": "Project management",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Project management"
+        },
+        "score": null,
+        "level": null
+      },
+      {
+        "id": 8,
+        "name": "Adaptability",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Adaptability"
+        },
+        "score": null,
+        "level": null
+      },
+      {
+        "id": 9,
+        "name": "Creativity",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Creativity"
+        },
+        "score": null,
+        "level": null
+      },
+      {
+        "id": 10,
+        "name": "Flexibility",
+        "image": {
+          "src": "https://i.imgur.com/hvQoFMV.png",
+          "alt": "Flexibility"
+        },
+        "score": null,
+        "level": null
+      }
+    ]
+  }
+]

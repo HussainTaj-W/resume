@@ -1,0 +1,9 @@
+#sidebar {
+  border-right: 1px solid #eee;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}

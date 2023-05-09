@@ -1,0 +1,503 @@
+{
+  "entries": [
+    {
+      "from": "February 2021",
+      "to": "Present",
+      "institution": {
+        "name": "DEF Tech"
+      },
+      "title": "Software Engineer",
+      "description": "Worked on developing complex software systems used by *thousands of users* daily.\n - Received multiple patents for **innovative ideas**.\n- Contributed to the development of a system that **increased company revenue by 15%**.\n- **Mentored** junior developers and provided guidance on best practices.\n- Developed a machine learning algorithm that **improved the accuracy** of the company's recommendation system by *25%*.\n- Reduced the application launch time **by 50%** by implementing efficient caching strategies.\n- Conducted a series of training sessions on software testing that led to a **20% reduction** in production defects.\n- Introduced a code review process that resulted in a *30% decrease in code errors* and improved code quality.\n- Led the development of a new feature that allowed users to customize their profile, resulting in a 15% increase in user engagement.",
+      "gallery": [
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        }
+      ],
+      "skills": [
+        {
+          "id": 20,
+          "name": "C#",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "C#"
+          },
+          "score": 75,
+          "level": "Advanced"
+        },
+        {
+          "id": 21,
+          "name": "Scala",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Scala"
+          },
+          "score": 70,
+          "level": "Intermediate"
+        },
+        {
+          "id": 22,
+          "name": "Swift",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Swift"
+          },
+          "score": 65,
+          "level": "Intermediate"
+        },
+        {
+          "id": 23,
+          "name": "Kotlin",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Kotlin"
+          },
+          "score": 60,
+          "level": "Intermediate"
+        },
+        {
+          "id": 24,
+          "name": "Unity",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Unity"
+          },
+          "score": 70,
+          "level": "Intermediate"
+        },
+        {
+          "id": 25,
+          "name": "Unreal Engine",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Unreal Engine"
+          },
+          "score": 60,
+          "level": ""
+        },
+        {
+          "id": 26,
+          "name": "OpenGL",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "OpenGL"
+          },
+          "score": 75,
+          "level": "Advanced"
+        },
+        {
+          "id": 27,
+          "name": "Docker",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Docker"
+          },
+          "score": 70,
+          "level": ""
+        },
+        {
+          "id": 28,
+          "name": "React Native",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "React Native"
+          },
+          "score": 65,
+          "level": "Intermediate"
+        },
+        {
+          "id": 29,
+          "name": "Vue.js",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Vue.js"
+          },
+          "score": 60,
+          "level": "Intermediate"
+        },
+        {
+          "id": 30,
+          "name": "RabbitMQ",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "RabbitMQ"
+          },
+          "score": 55,
+          "level": ""
+        }
+      ]
+    },
+    {
+      "from": "June 2018",
+      "to": "January 2021",
+      "institution": {
+        "name": "ABC Startup"
+      },
+      "title": "Lead Developer",
+      "description": "Built the entire product from scratch and launched it within the desired timeline.\n- Awarded the **\"Employee of the Year\"** award for successful product launch.\n- Developed a highly efficient codebase that **reduced load times by *30%***.\n- **Mentored** junior developers and helped them grow within the organization.",
+      "gallery": [
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        }
+      ],
+      "skills": [
+        {
+          "id": 11,
+          "name": "MongoDB",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "MongoDB"
+          },
+          "score": 85,
+          "level": "Advanced"
+        },
+        {
+          "id": 11,
+          "name": "MongoDB",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "MongoDB"
+          },
+          "score": 75,
+          "level": "Advanced"
+        },
+        {
+          "id": 12,
+          "name": "React Native",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "React Native"
+          },
+          "score": 80,
+          "level": "Advanced"
+        },
+        {
+          "id": 13,
+          "name": "AngularJS",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "AngularJS"
+          },
+          "score": 60,
+          "level": "Intermediate"
+        },
+        {
+          "id": 14,
+          "name": "Bootstrap",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Bootstrap"
+          },
+          "score": 85,
+          "level": "Advanced"
+        },
+        {
+          "id": 15,
+          "name": "Git",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Git"
+          },
+          "score": 90,
+          "level": "Expert"
+        },
+        {
+          "id": 16,
+          "name": "MySQL",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "MySQL"
+          },
+          "score": 85,
+          "level": "Advanced"
+        },
+        {
+          "id": 17,
+          "name": "PostgreSQL",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "PostgreSQL"
+          },
+          "score": 75,
+          "level": "Advanced"
+        },
+        {
+          "id": 18,
+          "name": "Oracle",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Oracle"
+          },
+          "score": 70,
+          "level": "Intermediate"
+        },
+        {
+          "id": 19,
+          "name": "PHP",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "PHP"
+          },
+          "score": 80,
+          "level": "Advanced"
+        }
+      ]
+    },
+    {
+      "from": "May 2016",
+      "to": "May 2018",
+      "institution": {
+        "name": "XYZ Corporation"
+      },
+      "title": "Software Engineer",
+      "description": "Worked on developing and maintaining the company's flagship mobile app.\n- Promoted to a senior position within *18 months* of joining the company.\n- Developed a new feature that **increased user engagement by 20%**.\n- Received the **\"Rising Star\"** award for exceptional performance.",
+      "gallery": [
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        }
+      ],
+      "skills": [
+        {
+          "id": 1,
+          "name": "Python",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Python"
+          },
+          "score": 90,
+          "level": "Expert"
+        },
+        {
+          "id": 2,
+          "name": "Java",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Java"
+          },
+          "score": 85,
+          "level": "Advanced"
+        },
+        {
+          "id": 3,
+          "name": "C++",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "C++"
+          },
+          "score": 80,
+          "level": "Advanced"
+        },
+        {
+          "id": 4,
+          "name": "JavaScript",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "JavaScript"
+          },
+          "score": 85,
+          "level": "Advanced"
+        },
+        {
+          "id": 5,
+          "name": "HTML",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "HTML"
+          },
+          "score": 95,
+          "level": "Expert"
+        },
+        {
+          "id": 6,
+          "name": "CSS",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "CSS"
+          },
+          "score": 90,
+          "level": "Expert"
+        },
+        {
+          "id": 7,
+          "name": "React",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "React"
+          },
+          "score": 80,
+          "level": "Advanced"
+        },
+        {
+          "id": 8,
+          "name": "Angular",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Angular"
+          },
+          "score": 75,
+          "level": "Intermediate"
+        },
+        {
+          "id": 9,
+          "name": "Node.js",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Node.js"
+          },
+          "score": 85,
+          "level": "Advanced"
+        },
+        {
+          "id": 10,
+          "name": "Express.js",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Express.js"
+          },
+          "score": 80,
+          "level": "Advanced"
+        },
+        {
+          "id": 11,
+          "name": "MongoDB",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "MongoDB"
+          },
+          "score": 85,
+          "level": "Advanced"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "entries": [
+    {
+      "from": "September 2010",
+      "to": "June 2014",
+      "institution": {
+        "name": "University"
+      },
+      "title": "Bachelor of Science in Computer Science",
+      "description": "The degree provided a strong foundation in computer science, programming, algorithms, and data structures.\n- Completed a senior project that utilized **machine learning algorithms** to classify images with an accuracy of 90%.\n- Earned a spot on the **Dean's Honor List** for achieving a GPA of *3.8* or higher.\n- Participated in multiple hackathons and coding competitions, winning **first place** in two of them.",
+      "gallery": [
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        }
+      ],
+      "skills": [
+        {
+          "id": 13,
+          "name": "AngularJS",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "AngularJS"
+          },
+          "score": 60,
+          "level": "Intermediate"
+        },
+        {
+          "id": 14,
+          "name": "Bootstrap",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Bootstrap"
+          },
+          "score": 85,
+          "level": "Advanced"
+        },
+        {
+          "id": 15,
+          "name": "Git",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Git"
+          },
+          "score": 90,
+          "level": "Expert"
+        },
+        {
+          "id": 16,
+          "name": "MySQL",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "MySQL"
+          },
+          "score": 85,
+          "level": "Advanced"
+        },
+        {
+          "id": 17,
+          "name": "PostgreSQL",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "PostgreSQL"
+          },
+          "score": 75,
+          "level": "Advanced"
+        },
+        {
+          "id": 18,
+          "name": "Oracle",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Oracle"
+          },
+          "score": 70,
+          "level": "Intermediate"
+        },
+        {
+          "id": 19,
+          "name": "PHP",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "PHP"
+          },
+          "score": 80,
+          "level": "Advanced"
+        },
+        {
+          "id": 20,
+          "name": "C#",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "C#"
+          },
+          "score": 75,
+          "level": "Advanced"
+        }
+      ]
+    },
+    {
+      "from": "August 2008",
+      "to": "June 2010",
+      "institution": {
+        "name": "Santa Monica College"
+      },
+      "title": "College",
+      "description": "The degree provided a foundation in mathematics, statistics, and critical thinking.\n- Graduated with high honors, earning a **GPA of 3.9** or higher.\n- Participated in the Math Club and competed in regional mathematics competitions.\n- **Tutored** fellow students in mathematics and statistics.\n- **Developed a web application** that helped students track their academic progress and plan their schedules effectively.\n- Conducted research on mathematical modeling and presented findings at a **regional conference**.\n- Participated in an **internship program** with a local tech company and gained practical experience in software development.\n- **Co-authored a paper** on mathematical optimization that was published in a peer-reviewed journal.\n- Completed coursework in data science and machine learning, earning top grades in both subjects.\n- Received a scholarship for **outstanding academic performance** in mathematics.\n- Developed a passion for **open-source software development** and started contributing to several projects in the community.",
+      "gallery": [
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-vector/computer-programmer-landing-page_52683-3104.jpg",
+          "alt": "This is what it looks like."
+        },
+        {
+          "src": "https://img.freepik.com/free-photo/server-cloud-data-storage-concept-solution-web-database-backup-computer-infrastructure-technology-cloudscape-digital-online-service-global-network_90220-1341.jpg",
+          "alt": "This is what it looks like."
+        }
+      ],
+      "skills": [
+        {
+          "id": 1,
+          "name": "Communication",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Communication"
+          },
+          "score": null,
+          "level": "Expert"
+        },
+        {
+          "id": 2,
+          "name": "Teamwork",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Teamwork"
+          },
+          "score": null,
+          "level": ""
+        },
+        {
+          "id": 3,
+          "name": "Leadership",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Leadership"
+          },
+          "score": null,
+          "level": "Advanced"
+        },
+        {
+          "id": 4,
+          "name": "Problem-solving",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Problem-solving"
+          },
+          "score": null,
+          "level": null
+        },
+        {
+          "id": 5,
+          "name": "Critical thinking",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Critical thinking"
+          },
+          "score": null,
+          "level": null
+        },
+        {
+          "id": 6,
+          "name": "Time management",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Time management"
+          },
+          "score": null,
+          "level": null
+        },
+        {
+          "id": 7,
+          "name": "Project management",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Project management"
+          },
+          "score": null,
+          "level": null
+        }
+      ]
+    },
+    {
+      "from": "August 2004",
+      "to": "June 2008",
+      "institution": {
+        "name": "Westchester High School"
+      },
+      "title": "",
+      "description": "Graduated with a strong academic record and a passion for science and technology.\n- Earned a spot on the &&Principal's Honor Roll&& for achieving a GPA of 4.0 or higher.\n- Participated in the Robotics Club and helped design and build a robot that competed in regional competitions.\n- Participated in the Science Olympiad and won first place in the physics event.\n- Completed Advanced Placement courses in calculus, physics, and computer science, earning top scores on all exams.",
+      "gallery": [],
+      "skills": [
+        {
+          "id": 6,
+          "name": "Time management",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Time management"
+          },
+          "score": null,
+          "level": null
+        },
+        {
+          "id": 7,
+          "name": "Project management",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Project management"
+          },
+          "score": null,
+          "level": null
+        },
+        {
+          "id": 8,
+          "name": "Adaptability",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Adaptability"
+          },
+          "score": null,
+          "level": null
+        },
+        {
+          "id": 9,
+          "name": "Creativity",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Creativity"
+          },
+          "score": null,
+          "level": null
+        },
+        {
+          "id": 10,
+          "name": "Flexibility",
+          "image": {
+            "src": "https://i.imgur.com/hvQoFMV.png",
+            "alt": "Flexibility"
+          },
+          "score": null,
+          "level": null
+        }
+      ]
+    }
+  ]
+}

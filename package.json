@@ -1,0 +1,49 @@
+{
+  "name": "react-resume",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --noEmit && vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .tsx,.ts .",
+    "prettier": "prettier . --ignore-path .gitignore --write",
+    "prettier:check": "prettier . --ignore-path .gitignore --check",
+    "type:check": "tsc"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.19",
+    "@chakra-ui/react": "^2.6.0",
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@formspree/react": "^2.4.1",
+    "@kunukn/react-collapse": "^2.2.10",
+    "framer-motion": "^10.12.7",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.7",
+    "react-modal-image": "^2.6.0",
+    "react-scroll": "^1.8.9"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-modal-image": "^2.6.0",
+    "@types/react-scroll": "^1.8.7",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.38.0",
+    "eslint-config-react-app": "^7.0.1",
+    "lint": "^0.8.19",
+    "prettier": "2.8.7",
+    "sass": "^1.62.1",
+    "typescript": "^4.9.5",
+    "vite": "^4.2.0",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-static-copy": "^0.14.0"
+  }
+}

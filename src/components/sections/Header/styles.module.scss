@@ -1,0 +1,27 @@
+@import "@/styles/_colors";
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    $circle-size: 100px;
+
+    content: "";
+    width: $circle-size;
+    height: $circle-size;
+    background-color: $primary-color-2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 0 0 $circle-size;
+  }
+
+  img {
+    aspect-ratio: 1;
+    border-radius: 100%;
+  }
+}
