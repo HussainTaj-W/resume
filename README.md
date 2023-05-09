@@ -1,6 +1,6 @@
 # react-resume
 
-[![Tests](https://github.com/Jibran1998/react-resume/actions/workflows/tests.yml/badge.svg)](https://github.com/Jibran1998/react-resume/actions/workflows/tests.yml)
+[![Tests](https://github.com/HussainTaj-W/resume/actions/workflows/tests.yml/badge.svg)](https://github.com/HussainTaj-W/resume/actions/workflows/tests.yml)
 
 ### Tools
 
