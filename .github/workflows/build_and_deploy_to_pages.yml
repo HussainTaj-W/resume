@@ -53,6 +53,10 @@ jobs:
         id: repo_url
         run: echo "::set-output name=repo_name::${REPO_URL##*/}"
 
+      - name: Test repo name
+        run: |
+          echo ${{ steps.repo_url.outputs.repo_name }}
+
       - name: Commit and push changes to target repository
         uses: EndBug/add-and-commit@v9
         with:
@@ -61,4 +65,4 @@ jobs:
           push: true
           cwd: "deploy-repo"
         env:
-          BASE_SITE_URL: /${{ steps.repo_url.outputs.repo_name }}/
+          BASE_SITE_URL: ${{ steps.repo_url.outputs.repo_name }}
