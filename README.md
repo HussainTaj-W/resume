@@ -2,7 +2,7 @@
 
 # Resume
 
-## [Demo](https://hussaintaj-w.github.io/resume-deploy/)
+## [Demo](https://hussaintaj-w.github.io/resume/)
 
 A resume / portfolio / cv made in React.
 
