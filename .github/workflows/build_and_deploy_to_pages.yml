@@ -9,8 +9,10 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
@@ -26,39 +28,56 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Get repo name
-        env:
-          REPO_URL: ${{ secrets.DEPLOY_REPO }}
-        id: repo_url
-        run: echo "{repo_name}={:${REPO_URL##*/}}" >> $GITHUB_OUTPUT
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+        id: pages_conf
+        with:
+          enablement: true
+          token: ${{ secrets.GH_PAT }}
 
       - name: Build app
         run: npm run build
         env:
-          BASE_SITE_URL: ${{ steps.repo_url.outputs.repo_name }}
+          BASE_SITE_URL: ${{ steps.pages_conf.outputs.base_path }}
 
-      - name: Authenticate SSH
-        uses: webfactory/ssh-agent@v0.7.0
+      - name: Archive artifact
+        shell: sh
+        run: |
+          chmod -c -R +rX "$INPUT_PATH" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
+          tar \
+            --dereference --hard-dereference \
+            --directory "$INPUT_PATH" \
+            -cvf "$RUNNER_TEMP/artifact.tar" \
+            --exclude=.git \
+            --exclude=.github \
+            .
+        env:
+          INPUT_PATH: dist/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
         with:
-          ssh-private-key: ${{ secrets.DEPLOY_REPO_TOKEN }}
+          path: ${{ runner.temp }}/artifact.tar
 
-      - name: Clone target repository
-        uses: actions/checkout@v3
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
         with:
-          repository: ${{ secrets.DEPLOY_REPO }}
-          ref: main
-          path: deploy-repo
-
-      - name: Delete old build files
-        run: rm -rf deploy-repo/*
-
-      - name: Copy build files to target repository
-        run: cp -R dist/* deploy-repo
-
-      - name: Commit and push changes to target repository
-        uses: EndBug/add-and-commit@v9
-        with:
-          message: Update build ${{ github.run_number }}
-          add: "."
-          push: true
-          cwd: "deploy-repo"
+          token: ${{ secrets.GH_PAT }}
+          artifact_name: artifact

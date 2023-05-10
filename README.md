@@ -36,13 +36,9 @@ npm run build
 This repo comes with a workflow to make it easy to make changes and deploy them to GitHub pages. To set it up, follow these steps:
 
 1. Fork this repo.
-2. Create a repo in your account. You can call it anything, let's call it `your-name/your-build-repo` for this example.
-3. Open `your-name/your-build-repo`'s Settings and enable Pages on the `main` branch.
-   - Create a deploy key with write enabled. Add your repo url to the comment of the key e.g. `ssh-keygen -t ed25519 -C "https://github.com/your-name/your-build-repo"`.
-4. Open your fork of this repo and add the following two secrets:
-   - `DEPLOY_REPO`: `your-name/your-build-repo`
-   - `DEPLOY_REPO_TOKEN`: `the private key from step 3`
-5. Trigger the workflow `Build and Deploy` and your website will be build and deployed to the build repo. You can trigger it by making a small update, I'm not sure if there is another option.
+2. In the forked repo's settings, enable Pages and set source to `GitHub Actions`.
+3. Add a repository secret `GH_PAT` this will be your GitHub PAT (Personal Access Token). You will need at least Pages write access permission on this token.
+4. You can trigger the "Build and Deploy" workflow from Actions tab to deploy the resume to pages. Any subsequent changes on `main` will trigger this workflow.
 
 ### Changing Styles
 
