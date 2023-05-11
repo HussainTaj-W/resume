@@ -24,13 +24,13 @@ function ListEntry({ data }: Props) {
         {data.title}
       </Text>
       {data.skills.length ? (
-        <>
-          <SkillCollectionCompact skills={data.skills} /> <Box m={2} />
-        </>
+        <Box mb={4} mt={2}>
+          <SkillCollectionCompact skills={data.skills} />
+        </Box>
       ) : null}
-      <Box m={2} />
-      <CollapsibleDescription>{data.description}</CollapsibleDescription>
-      <Box m={4} />
+      <Box my={6} mr={2}>
+        <CollapsibleDescription>{data.description}</CollapsibleDescription>
+      </Box>
       {data.gallery.length ? <LineGallery images={data.gallery} /> : null}
       <Box m={4} />
     </Box>
