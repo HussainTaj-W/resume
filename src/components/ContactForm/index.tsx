@@ -48,7 +48,7 @@ function ContactForm() {
         <Text textAlign="center" mb={5}>
           <EmailIcon /> send me a message
         </Text>
-        <FormControl m={2}>
+        <FormControl my={2}>
           <Input
             id="email"
             type="email"
@@ -57,7 +57,7 @@ function ContactForm() {
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </FormControl>
-        <FormControl m={2}>
+        <FormControl my={2}>
           <Textarea id="message" name="message" placeholder="Message" />
           <FormErrorMessage>
             <ValidationError
@@ -68,7 +68,7 @@ function ContactForm() {
             />
           </FormErrorMessage>
         </FormControl>
-        <Center mt={4}>
+        <Center mt={8}>
           <Button type="submit" disabled={state.submitting}>
             Send
           </Button>
@@ -78,7 +78,7 @@ function ContactForm() {
   );
   return (
     <Card m={2} size="lg" w="sm" variant="outline" className={styles.card}>
-      <CardBody py={16}>{state.succeeded ? response : form}</CardBody>
+      <CardBody p={10}>{state.succeeded ? response : form}</CardBody>
     </Card>
   );
 }
