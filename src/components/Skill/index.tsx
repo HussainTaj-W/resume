@@ -20,6 +20,7 @@ function Skill({ data, isCompact = false }: Props) {
         <Image
           boxSize={isCompact ? "1em" : "1.5em"}
           objectFit="cover"
+          mr={0.5}
           src={data.image.src}
           alt={data.image.alt}
         />

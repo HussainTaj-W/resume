@@ -2,7 +2,8 @@
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
+  align-items: center;
 
   /* Firefox */
   & {
