@@ -17,6 +17,10 @@ export default defineConfig(({ mode }) => {
             src: "src/data/*.json",
             dest: "data/",
           },
+          {
+            src: "src/assets/",
+            dest: "./",
+          },
         ],
       }),
       react(),
