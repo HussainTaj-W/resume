@@ -45,7 +45,7 @@
 
 .gallery-image {
   margin: 4px;
-  border-radius: 8%;
-  min-width: 150px;
-  width: 150px;
+  border-radius: 16px;
+  max-height: 100px !important;
+  border: #eee solid 1px;
 }
