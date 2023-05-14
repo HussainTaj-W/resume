@@ -10,11 +10,11 @@ A resume / portfolio / cv made in React.
 
 ### Add your information
 
-Go to [./src/data](./src/data) and populate the JSONs with your information.
+Go to [./src/data](./src/data) and populate the YMLs with your information.
 
 #### Self hosting images
 
-You can add your images/files under [./src/assets/](./src/assets/). To use them in data JSONs, you can use the following format `/assets/your-file.ext`.
+You can add your images/files under [./src/assets/](./src/assets/). To use them in data YMLs, you can use the following format `/assets/your-file.ext`.
 
 > Use [formspree.io](formspree.io/) to create an id for your contact form.
 
