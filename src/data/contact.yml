@@ -21,9 +21,11 @@ channels:
     image:
       src: https://i.imgur.com/EnM9omZ.png
       alt: GitHub Icon
+    external: true
   - name: LinkedIn
     address: linkedin.com/user
     uri: https://www.linkedin.com
     image:
       src: https://i.imgur.com/53V0L9S.png
       alt: LinkedIn Icon
+    external: true

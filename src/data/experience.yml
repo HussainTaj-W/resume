@@ -4,6 +4,7 @@ entries:
     to: Present
     institution:
       name: DEF Tech
+      uri: https://www.google.com
     title: Software Engineer
     description: |-
       Worked on developing complex software systems used by *thousands of users* daily.
@@ -124,6 +125,7 @@ entries:
     to: January 2021
     institution:
       name: ABC Startup
+      uri: https://www.google.com
     title: Lead Developer
     description: |-
       Built the entire product from scratch and launched it within the desired timeline.

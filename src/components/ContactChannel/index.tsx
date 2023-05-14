@@ -1,3 +1,4 @@
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Box, Link, Text, Image } from "@chakra-ui/react";
 
 import IContactChannel from "@/models/contact-channel";
@@ -17,8 +18,16 @@ function ContactChannel({ data }: Props) {
           {data.name}
         </Text>
       </Box>
-      <Link href={data.uri ?? "#"} ml="1em" pl={1}>
+      <Link
+        href={data.uri ?? "#"}
+        ml="1em"
+        pl={1}
+        target={data.external ? "_blank" : "_self"}
+      >
         {data.address}
+        {data.external ? (
+          <ExternalLinkIcon boxSize="0.8em" verticalAlign="center" />
+        ) : null}
       </Link>
     </Box>
   );

@@ -5,4 +5,5 @@ export default interface IContactChannel {
   address: string;
   uri?: string | null;
   image: IImage;
+  external?: boolean | null;
 }

@@ -1,4 +1,5 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Box, Heading, Link, Text } from "@chakra-ui/react";
 
 import CollapsibleDescription from "@/components/CollapsibleDescription";
 import LineGallery from "@/components/LineGallery";
@@ -19,6 +20,11 @@ function ListEntry({ data }: Props) {
       </Text>
       <Heading as="h2" size="md">
         {data.institution.name}
+        {data.institution.uri ? (
+          <Link href={data.institution.uri} target="_blank" ml={1}>
+            <ExternalLinkIcon boxSize="0.8em" verticalAlign="center" />
+          </Link>
+        ) : null}
       </Heading>
       <Text as="strong" display="block" mb={1}>
         {data.title}
