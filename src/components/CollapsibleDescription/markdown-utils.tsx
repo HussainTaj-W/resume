@@ -1,6 +1,6 @@
 import { ReactMarkdownProps } from "react-markdown/lib/complex-types";
 
-import { ListItem, UnorderedList, Text } from "@chakra-ui/react";
+import { ListItem, UnorderedList, Text, Link } from "@chakra-ui/react";
 
 const COMPONENT_MAP = new Map<string, React.ComponentType>([
   ["p", Text],
@@ -8,6 +8,7 @@ const COMPONENT_MAP = new Map<string, React.ComponentType>([
   ["b", Text],
   ["ul", UnorderedList],
   ["li", ListItem],
+  ["a", Link],
 ]);
 
 function DynamicallyEquivalentComponent({
