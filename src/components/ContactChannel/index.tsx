@@ -26,7 +26,7 @@ function ContactChannel({ data }: Props) {
       >
         {data.address}
         {data.external ? (
-          <ExternalLinkIcon boxSize="0.8em" verticalAlign="center" />
+          <ExternalLinkIcon boxSize="0.8em" verticalAlign="center" ml={1} />
         ) : null}
       </Link>
     </Box>
