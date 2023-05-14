@@ -2,7 +2,7 @@ import { useCallback, useContext } from "react";
 
 import { Box, Button } from "@chakra-ui/react";
 
-import headerData from "@/data/header.json";
+import headerData from "@/data/header.yml";
 import { scrollToName } from "@/utils/scroll-handler";
 
 import { ActiveSectionNameContext } from "../ResumeContext";

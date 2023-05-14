@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import data from "@/data/app.json";
+import data from "@/data/app.yml";
 
 import "./App.css";
 import Resume from "./components/Resume";

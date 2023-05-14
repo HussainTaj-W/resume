@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
 
 import { ActiveSectionNameContext } from "@/components/ResumeContext";
-import data from "@/data/header.json";
+import data from "@/data/header.yml";
 import { scrollToName } from "@/utils/scroll-handler";
 
 import styles from "./styles.module.scss";

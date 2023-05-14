@@ -2,7 +2,7 @@ import { Box, Heading } from "@chakra-ui/react";
 
 import ListEntry from "@/components/ListEntry";
 import Timeline from "@/components/Timeline";
-import data from "@/data/experience.json";
+import data from "@/data/experience.yml";
 
 import "./style.css";
 

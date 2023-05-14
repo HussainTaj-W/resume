@@ -2,7 +2,7 @@ import { Box, Center, Heading } from "@chakra-ui/react";
 
 import ContactChannel from "@/components/ContactChannel";
 import ContactForm from "@/components/ContactForm";
-import data from "@/data/contact.json";
+import data from "@/data/contact.yml";
 
 import "./style.css";
 

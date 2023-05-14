@@ -1,6 +1,6 @@
 import { Box, Center, Divider, Link, Text } from "@chakra-ui/react";
 
-import data from "@/data/footer.json";
+import data from "@/data/footer.yml";
 
 function Footer() {
   if (!data.attributions.length) return <></>;

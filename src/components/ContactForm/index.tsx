@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { useForm, ValidationError } from "@formspree/react";
 
-import data from "@/data/contact.json";
+import data from "@/data/contact.yml";
 
 import styles from "./styles.module.scss";
 

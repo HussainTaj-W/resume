@@ -1,7 +1,7 @@
 import { Box, Heading } from "@chakra-ui/react";
 
 import SkillCollection from "@/components/SkillCollection";
-import data from "@/data/skills.json";
+import data from "@/data/skills.yml";
 
 import "./style.css";
 
