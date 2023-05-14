@@ -25,7 +25,7 @@ function Contact() {
           ))}
         </Box>
 
-        <Box w="100%">
+        <Box flex={1}>
           <Center>
             <ContactForm />
           </Center>
