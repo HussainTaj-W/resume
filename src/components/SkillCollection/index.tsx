@@ -17,7 +17,7 @@ function SkillCollection({ data }: Props) {
       </Heading>
       <Wrap>
         {data.skills.map((skill, index) => (
-          <WrapItem minW="150px" p={1} key={`${skill.id}-${index}`}>
+          <WrapItem minW="12rem" p={1} key={`${skill.id}-${index}`}>
             <Skill data={skill} />
           </WrapItem>
         ))}
