@@ -2,23 +2,23 @@
 
 # Resume
 
-## [Demo](https://hussaintaj-w.github.io/resume/)
-
 A resume / portfolio / cv made in React.
+
+## Demo
+
+- [Demo](https://hussaintaj-w.github.io/resume/) shows a default build of this repo.
+- [hussain.taj.contact](https://hussain.taj.contact) is my customized version.
 
 ## Getting Started
 
-### Add your information
+### Adding your information
 
-Go to [./src/data](./src/data) and populate the YMLs with your information.
+1. Go to [./src/data](./src/data) and populate the YMLs with your information.
+2. You can add your images or files under [./src/assets/](./src/assets/). To use them in data YMLs, you can use the following format `/assets/your-file.ext`.
+3. Use [formspree.io](formspree.io/) to create an id for your contact form.
+4. Update [./index.html](./index.html) and fill in your metadata.
 
-#### Self hosting images
-
-You can add your images/files under [./src/assets/](./src/assets/). To use them in data YMLs, you can use the following format `/assets/your-file.ext`.
-
-> Use [formspree.io](formspree.io/) to create an id for your contact form.
-
-### Run locally
+### Running locally
 
 Clone this repo and run the following commands to start the dev server.
 
@@ -27,7 +27,7 @@ npm install
 npm run dev
 ```
 
-### Build
+### Building
 
 You can create a production build by running the following command.
 
