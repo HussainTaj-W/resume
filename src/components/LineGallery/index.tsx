@@ -13,7 +13,7 @@ interface Props {
 
 function LineGallery({ images, height = 100 }: Props) {
   return (
-    <Box className={styles.gallery} my={1}>
+    <Box className={styles.gallery} my={1} userSelect="none">
       {images.map((image, index) => (
         <ModalImage
           key={`image-${index}`}

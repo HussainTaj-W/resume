@@ -17,7 +17,13 @@ function CollapsibleDescription({ children, threshold = 5 }: Props) {
   const isAlwaysOpen = children.split("\n").length <= threshold;
 
   const collapseButton = (
-    <Button size="xs" variant="link" p="1" onClick={() => setIsOpen(!isOpen)}>
+    <Button
+      size="xs"
+      variant="link"
+      p="1"
+      onClick={() => setIsOpen(!isOpen)}
+      className={styles["more-button"]}
+    >
       {isOpen ? "see less" : "see more"}
     </Button>
   );

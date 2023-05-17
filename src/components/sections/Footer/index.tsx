@@ -2,11 +2,13 @@ import { Box, Center, Divider, Link, Text } from "@chakra-ui/react";
 
 import data from "@/data/footer.yml";
 
+import styles from "./styles.module.scss";
+
 function Footer() {
   if (!data.attributions.length) return <></>;
 
   return (
-    <>
+    <Box className={styles.footer}>
       <Divider />
       <Center>
         {data.attributions.map((attr) => (
@@ -20,7 +22,7 @@ function Footer() {
           </Box>
         ))}
       </Center>
-    </>
+    </Box>
   );
 }
 

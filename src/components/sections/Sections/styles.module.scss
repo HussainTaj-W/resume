@@ -43,4 +43,13 @@
       background-color: $primary-color-2;
     }
   }
+
+  @media print {
+    padding-left: 0;
+    margin-bottom: 0;
+
+    &::before {
+      background: transparent !important;
+    }
+  }
 }

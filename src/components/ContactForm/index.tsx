@@ -77,7 +77,14 @@ function ContactForm() {
     </form>
   );
   return (
-    <Card m={2} size="lg" w="sm" variant="outline" className={styles.card}>
+    <Card
+      m={2}
+      size="lg"
+      w="sm"
+      variant="outline"
+      className={styles.card}
+      userSelect="none"
+    >
       <CardBody p={10}>{state.succeeded ? response : form}</CardBody>
     </Card>
   );

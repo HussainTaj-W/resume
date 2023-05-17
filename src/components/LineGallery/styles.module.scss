@@ -44,6 +44,10 @@
   &::-webkit-scrollbar-thumb:active {
     background-color: #b0bec5;
   }
+
+  @media print {
+    display: none !important;
+  }
 }
 
 .gallery-image {

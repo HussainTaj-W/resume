@@ -15,4 +15,11 @@
     left: calc(calc($circle-size / -2) - calc($border-size / 2));
     border-radius: $circle-size;
   }
+
+  @media print {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
 }

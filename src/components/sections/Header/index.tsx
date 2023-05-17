@@ -23,6 +23,7 @@ function Header() {
             base: "column-reverse",
             lg: "row",
           }}
+          className={styles["header-identity"]}
         >
           <Box
             m={4}
@@ -33,14 +34,7 @@ function Header() {
               lg: "start",
             }}
           >
-            <Heading
-              as="h1"
-              size={{
-                base: "2xl",
-                md: "4xl",
-              }}
-              textAlign="center"
-            >
+            <Heading as="h1" size="2xl" textAlign="center">
               {data.name}
             </Heading>
             <Text
@@ -68,6 +62,7 @@ function Header() {
                 base: "200px",
                 md: "300px",
               }}
+              userSelect="none"
             />
           </Box>
         </Box>

@@ -4,4 +4,8 @@
   height: 90vh;
   justify-content: center;
   position: fixed;
+
+  @media print {
+    display: none !important;
+  }
 }

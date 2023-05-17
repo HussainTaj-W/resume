@@ -15,8 +15,26 @@
   }
 }
 
+.content-closed,
+.content-open {
+  @media print {
+    & > div {
+      height: auto !important;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
+
 .content-open {
   &::after {
     content: "";
+  }
+}
+
+.more-button {
+  @media print {
+    display: none !important;
   }
 }

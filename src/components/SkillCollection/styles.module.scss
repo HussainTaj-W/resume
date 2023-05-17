@@ -1,0 +1,14 @@
+.collection {
+  @media print {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.collection-item {
+  @media print {
+    padding: 0 !important;
+    padding-left: 5pt !important;
+    margin: 0 !important;
+  }
+}

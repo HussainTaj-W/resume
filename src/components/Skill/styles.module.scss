@@ -1,0 +1,13 @@
+.skill {
+  @media print {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.image,
+.score {
+  @media print {
+    display: none !important;
+  }
+}

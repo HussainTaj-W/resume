@@ -12,3 +12,24 @@
     text-decoration-color: $primary-color-2;
   }
 }
+
+.channel {
+  @media print {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    & img {
+      display: none !important;
+    }
+
+    & * {
+      padding: 0 !important;
+      margin: 0 !important;
+      display: inline !important;
+    }
+
+    & a {
+      padding-left: 5pt !important;
+    }
+  }
+}

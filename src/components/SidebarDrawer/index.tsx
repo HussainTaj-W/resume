@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 
 import SidebarMenu from "../SidebarMenu";
+import styles from "./styles.module.scss";
 
 function SidebarDrawer() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -24,6 +25,7 @@ function SidebarDrawer() {
         onClick={onOpen}
         rounded="100%"
         icon={<HamburgerIcon />}
+        className={styles["drawer-button"]}
       />
       <Drawer
         isOpen={isOpen}

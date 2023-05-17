@@ -13,7 +13,13 @@ function ContactChannel({ data }: Props) {
   return (
     <Box m={6} className={styles.channel}>
       <Box display="flex" alignItems="center">
-        <Image src={data.image.src} alt={data.image.alt} boxSize="1em" mr={1} />
+        <Image
+          src={data.image.src}
+          alt={data.image.alt}
+          boxSize="1em"
+          mr={1}
+          userSelect="none"
+        />
         <Text as="b" display="block">
           {data.name}
         </Text>

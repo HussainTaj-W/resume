@@ -1,0 +1,5 @@
+.drawer-button {
+  @media print {
+    display: none !important;
+  }
+}

@@ -1,5 +1,9 @@
 #sidebar {
   border-right: 1px solid #eee;
+
+  @media print {
+    display: none;
+  }
 }
 
 #container {
