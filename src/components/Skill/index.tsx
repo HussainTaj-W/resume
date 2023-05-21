@@ -50,6 +50,7 @@ function Skill({ data, isCompact = false }: Props) {
           size="xs"
           alignSelf="end"
           className={styles.score}
+          aria-label="Skill score"
         />
       ) : null}
     </Box>

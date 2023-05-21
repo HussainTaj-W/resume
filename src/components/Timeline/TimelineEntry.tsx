@@ -20,7 +20,7 @@ function TimelineEntry({ content }: TimelineEntryProps) {
         <Heading as="h2" size="md">
           {institution.name}
           {institution.uri ? (
-            <Link href={institution.uri} target="_blank" ml={1}>
+            <Link href={institution.uri} target="_blank" ml={1} aria-label={`Open reference for ${institution.name}`}>
               <ExternalLinkIcon boxSize="0.8em" verticalAlign="center" />
             </Link>
           ) : null}
@@ -29,16 +29,6 @@ function TimelineEntry({ content }: TimelineEntryProps) {
           {title}
         </Text>
         {...renderFactoryComponents(rest)}
-
-        {/* {data.skills.length ? (
-        <Box mb={4} mt={2}>
-          <SkillCollectionCompact skills={data.skills} />
-        </Box>
-      ) : null}
-      <Box my={6} mr={2}>
-        <CollapsibleDescription>{data.description}</CollapsibleDescription>
-      </Box>
-      {data.gallery.length ? <LineGallery images={data.gallery} /> : null} */}
         <Box m={4} />
       </Box>
     </Box>

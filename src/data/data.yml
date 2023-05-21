@@ -301,7 +301,7 @@ app:
                     uri: tel:+1234567890
                     image:
                       src: https://i.imgur.com/CwfKTR8.png
-                    alt: Phone Number Icon
+                      alt: Phone Number Icon
                 - contact:
                     name: Email
                     address: example@example.com
