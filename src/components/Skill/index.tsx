@@ -1,6 +1,6 @@
 import { Box, Text, Image, Progress, Tag } from "@chakra-ui/react";
 
-import ISkill from "@/models/skill";
+import ISkill from "@/types/skill";
 
 import styles from "./styles.module.scss";
 

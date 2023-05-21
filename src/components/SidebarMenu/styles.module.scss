@@ -4,8 +4,10 @@
   height: 90vh;
   justify-content: center;
   position: fixed;
+}
 
-  @media print {
+@media print {
+  .menu {
     display: none !important;
   }
 }

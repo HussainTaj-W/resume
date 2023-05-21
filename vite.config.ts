@@ -11,6 +11,16 @@ export default defineConfig(({ mode }) => {
 
   return {
     base: env.BASE_SITE_URL,
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            react: ["react", "react-dom"],
+            chakra: ["@chakra-ui/react", "@chakra-ui/icons"],
+          },
+        },
+      },
+    },
     plugins: [
       react(),
       eslint(),

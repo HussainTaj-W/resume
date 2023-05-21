@@ -2,34 +2,13 @@ import { useCallback, useContext } from "react";
 
 import { Box, Button } from "@chakra-ui/react";
 
-import headerData from "@/data/header.yml";
+import appData from "@/data/data.yml";
+import IHeader from "@/types/header";
+import ISection from "@/types/section";
 import { scrollToName } from "@/utils/scroll-handler";
 
 import { ActiveSectionNameContext } from "../ResumeContext";
 import styles from "./styles.module.scss";
-
-const MENU_ITEMS = [
-  {
-    displayName: headerData.name,
-    name: "header",
-  },
-  {
-    displayName: "Experience",
-    name: "experience",
-  },
-  {
-    displayName: "Education",
-    name: "education",
-  },
-  {
-    displayName: "Skills",
-    name: "skills",
-  },
-  {
-    displayName: "Contact",
-    name: "contact",
-  },
-];
 
 interface Props {
   onSelectedItem?: (name: string) => void;
@@ -52,9 +31,18 @@ function SidebarMenu({ onSelectedItem }: Props) {
     [onSelectedItem, setActiveSectionName]
   );
 
+  let menuItems = (appData.app.sections.content as ISection[]).map((item) => ({
+    name: item.id,
+    displayName: item.title,
+  }));
+  menuItems = [
+    { name: "header", displayName: (appData.app.header as IHeader).name },
+    ...menuItems,
+  ];
+
   return (
-    <Box className={styles.menu}>
-      {MENU_ITEMS.map((item) => (
+    <Box className={styles.menu} as="nav">
+      {menuItems.map((item) => (
         <Box m={1} key={item.name}>
           <Button
             variant="ghost"
