@@ -31,15 +31,15 @@ jobs:
           bestPractices=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['best-practices'])")
           seo=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['seo'])")
           pwa=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['pwa'])")
-          result="$performance $accessibility $bestPractices $seo $pwa"
-          echo "{result}={"$result"}"
-          echo "{result}={"$result"}" >> $GITHUB_OUTPUT
+          scores="$performance $accessibility $bestPractices $seo $pwa"
+          echo "{result}={\"$scores\"}"
+          echo "{result}={\"$scores\"}" >> $GITHUB_OUTPUT
 
       - name: Set Badge
         uses: RubbaBoy/BYOB@v1.3.0
         with:
           NAME: lighthouse
           LABEL: "LightHouse Score"
-          STATUS: ${{ steps.score.outputs.result }}
+          STATUS: "${{ steps.score.outputs.result }}"
           COLOR: AAAAAA
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
