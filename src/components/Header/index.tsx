@@ -56,8 +56,6 @@ function Header(props: HeaderProps) {
             <Image
               src={props.image.src}
               alt={props.image.alt}
-              height="100"
-              width="100"
               objectFit="cover"
               ml={2}
               boxSize={{
@@ -65,6 +63,8 @@ function Header(props: HeaderProps) {
                 md: "300px",
               }}
               userSelect="none"
+              height={100}
+              width={100}
             />
           </Box>
         </Box>

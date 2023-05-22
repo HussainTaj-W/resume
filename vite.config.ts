@@ -1,10 +1,10 @@
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig, loadEnv } from "vite";
+import { compression } from "vite-plugin-compression2";
 import eslint from "vite-plugin-eslint";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import pluginYaml from "vite-plugin-yaml2";
-import { compression } from 'vite-plugin-compression2';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -34,8 +34,8 @@ export default defineConfig(({ mode }) => {
           },
         ],
       }),
-      compression({algorithm: 'brotliCompress'}),
-      compression({exclude: [/\.(br)$/i]}),
+      compression({ algorithm: "brotliCompress" }),
+      compression({ exclude: [/\.(br)$/i] }),
     ],
     resolve: {
       alias: {

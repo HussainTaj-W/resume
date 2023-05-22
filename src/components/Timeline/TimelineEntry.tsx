@@ -20,7 +20,12 @@ function TimelineEntry({ content }: TimelineEntryProps) {
         <Heading as="h2" size="md">
           {institution.name}
           {institution.uri ? (
-            <Link href={institution.uri} target="_blank" ml={1} aria-label={`Open reference for ${institution.name}`}>
+            <Link
+              href={institution.uri}
+              target="_blank"
+              ml={1}
+              aria-label={`Open reference for ${institution.name}`}
+            >
               <ExternalLinkIcon boxSize="0.8em" verticalAlign="center" />
             </Link>
           ) : null}

@@ -14,15 +14,18 @@ export interface ContactProps {
 }
 
 function Contact({ name, address, uri, image, external }: ContactProps) {
+  const iconSize = "1em";
   return (
     <Box className={styles.channel}>
       <Box display="flex" alignItems="center">
         <Image
           src={image.src}
           alt={image.alt}
-          boxSize="1em"
+          boxSize={iconSize}
           mr={1}
           userSelect="none"
+          height={iconSize}
+          width={iconSize}
         />
         <Text as="b" display="block">
           {name}

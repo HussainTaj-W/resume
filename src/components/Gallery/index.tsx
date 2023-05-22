@@ -23,6 +23,7 @@ function Gallery({ content, height = 100 }: GalleryProps) {
           small={image.src}
           alt={image.alt}
           height={height}
+          width="auto"
           hideDownload={true}
         />
       ))}
