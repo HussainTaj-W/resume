@@ -7,7 +7,6 @@ export interface TimelineProps {
 function Timeline({ content }: TimelineProps) {
   return (
     <>
-      {" "}
       {content.map((entry, index) => (
         <TimelineEntry key={`timeline-entry-${index}`} content={entry} />
       ))}
