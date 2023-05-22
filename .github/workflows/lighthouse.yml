@@ -24,13 +24,8 @@ jobs:
       - name: Calculate total score
         id: score
         run: |
-          performance=$(echo "${{ steps.lighthouse.outputs.manifest }}" | jq -r '.[0].summary.performance')
-          accessibility=$(echo "${{ steps.lighthouse.outputs.manifest }}" | jq -r '.[0].summary.accessibility')
-          bestPractices=$(echo "${{ steps.lighthouse.outputs.manifest }}" | jq -r '.[0].summary.best-practices')
-          seo=$(echo "${{ steps.lighthouse.outputs.manifest }}" | jq -r '.[0].summary.seo')
-          pwa=$(echo "${{ steps.lighthouse.outputs.manifest }}" | jq -r '.[0].summary.pwa')
-          total=$(echo "scale=2; ($performance + $accessibility + $bestPractices + $seo + $pwa) / 5" | bc)
-          echo "{total}={$total}" >> $GITHUB_OUTPUT
+          performance=$(python -c "import json; data = json.loads('${{ steps.lighthouse.outputs.manifest }}'); print(data[0]['summary']['performance'])")
+          echo "{total}={$performance}" >> $GITHUB_OUTPUT
 
       - name: Set Badge
         uses: RubbaBoy/BYOB@v1.3.0
