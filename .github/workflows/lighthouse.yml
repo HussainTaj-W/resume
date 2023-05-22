@@ -27,7 +27,13 @@ jobs:
           REPORT_JSON: ${{ steps.lighthouse.outputs.manifest }}
         run: |
           performance=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['performance'])")
-          echo "{total}={$performance}" >> $GITHUB_OUTPUT
+          accessibility=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['accessibility'])")
+          best-practices=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['best-practices'])")
+          seo=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['seo'])")
+          pwa=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['pwa'])")
+          total=$(echo "scale=2; ($performance + $accessibility + $bestPractices + $seo + $pwa) / 5" | bc)
+          echo "{total}={$total}"
+          echo "{total}={$total}" >> $GITHUB_OUTPUT
 
       - name: Set Badge
         uses: RubbaBoy/BYOB@v1.3.0
