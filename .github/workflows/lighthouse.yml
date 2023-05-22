@@ -15,7 +15,28 @@ jobs:
 
       - name: Audit Resume using Lighthouse
         uses: treosh/lighthouse-ci-action@v10
+        id: lighthouse
         with:
           urls: ${{ steps.pages_conf.outputs.base_url }}/
-          uploadArtifacts: true # save results as an action artifacts
-          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+          temporaryPublicStorage: true
+          runs: 3
+
+      - name: Calculate total score
+        id: score
+        run: |
+          performance=$(echo "${{ steps.lighthouse.outputs.manifest }}" | jq -r '.[0].summary.performance')
+          accessibility=$(echo "${{ steps.lighthouse.outputs.manifest }}" | jq -r '.[0].summary.accessibility')
+          bestPractices=$(echo "${{ steps.lighthouse.outputs.manifest }}" | jq -r '.[0].summary.best-practices')
+          seo=$(echo "${{ steps.lighthouse.outputs.manifest }}" | jq -r '.[0].summary.seo')
+          pwa=$(echo "${{ steps.lighthouse.outputs.manifest }}" | jq -r '.[0].summary.pwa')
+          total=$(echo "scale=2; ($performance + $accessibility + $bestPractices + $seo + $pwa) / 5" | bc)
+          echo "{total}={$total}" >> $GITHUB_OUTPUT
+
+      - name: Set Badge
+        uses: RubbaBoy/BYOB@v1.3.0
+        with:
+          NAME: lighthouse
+          LABEL: "LightHouse Score"
+          STATUS: ${{ steps.score.total }}
+          COLOR: AAAAAA
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
