@@ -41,5 +41,5 @@ jobs:
           NAME: lighthouse
           LABEL: "LightHouse Score"
           STATUS: ${{ steps.score.outputs.result }}
-          COLOR: AAAAAA
+          COLOR: 212121
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
