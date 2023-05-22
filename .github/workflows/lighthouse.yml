@@ -16,6 +16,6 @@ jobs:
       - name: Audit Resume using Lighthouse
         uses: treosh/lighthouse-ci-action@v10
         with:
-          urls: ${{ steps.pages_conf.outputs.base_url }}
+          urls: ${{ steps.pages_conf.outputs.base_url }}/
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage
