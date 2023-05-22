@@ -1,0 +1,619 @@
+app:
+  title: Alex Johnson | Software Engineer
+  faviconUrl: /assets/react.svg
+
+  header:
+    name: Alex Johnson
+    title: Software Engineer
+    years: 3 Years
+    tagline: Engineering innovation through passion and dedication.
+    image:
+      src: /assets/images/avatar.jpg
+      alt: Alex Johnson photo
+
+  footer:
+    attributions:
+      - what: "Icons by "
+        whom:
+          name: Icons8
+          url: https://icons8.com
+      - what: "Images by "
+        whom:
+          name: Freepik
+          url: https://www.freepik.com/
+
+  sections:
+    content:
+      - id: experience
+        title: Experience
+        timeline:
+          content:
+            - from: February 2021
+              to: Present
+              institution:
+                name: DEF Tech
+                uri: https://www.google.com
+              title: Software Engineer
+              skills:
+                type: compact
+                references: skills
+                content: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+              description:
+                format: markdown
+                content: |-
+                  Worked on developing complex software systems used by *thousands of users* daily.
+                  - Received multiple patents for **innovative ideas**.
+                  - Contributed to the development of a system that **increased company revenue by 15%**.
+                  - **Mentored** junior developers and provided guidance on best practices.
+                  - Developed a machine learning algorithm that **improved the accuracy** of the company's recommendation system by *25%*.
+                  - Reduced the application launch time **by 50%** by implementing efficient caching strategies.
+                  - Conducted a series of training sessions on software testing that led to a **20% reduction** in production defects.
+                  - Introduced a code review process that resulted in a *30% decrease in code errors* and improved code quality.
+                  - Led the development of a new feature that allowed users to customize their profile, resulting in a 15% increase in user engagement.
+              gallery:
+                content:
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+
+            - from: June 2018
+              to: January 2021
+              institution:
+                name: ABC Startup
+                uri: https://www.google.com
+              title: Lead Developer
+              skills:
+                type: compact
+                references: skills
+                content: [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+              description:
+                content: |-
+                  Built the entire product from scratch and launched it within the desired timeline.
+                  - Awarded the **"Employee of the Year"** award for successful product launch.
+                  - Developed a highly efficient codebase that **reduced load times by *30%***.
+                  - **Mentored** junior developers and helped them grow within the organization.
+              gallery:
+                content:
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+
+            - from: May 2016
+              to: May 2018
+              institution:
+                name: XYZ Corporation
+                uri: https://www.google.com
+              title: Software Engineer
+              skills:
+                type: compact
+                references: skills
+                content: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+              description:
+                content: |-
+                  Worked on developing and maintaining the company's flagship mobile app.
+                  - Promoted to a senior position within *18 months* of joining the company.
+                  - Developed a new feature that **increased user engagement by 20%**.
+                  - Received the **"Rising Star"** award for exceptional performance.
+              gallery:
+                content:
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+
+      - id: education
+        title: Education
+        timeline:
+          content:
+            - from: September 2010
+              to: June 2014
+              institution:
+                name: University
+                uri: https://www.google.com
+              title: Bachelor of Science in Computer Science
+              skills:
+                type: compact
+                references: skills
+                content: [13, 14, 15, 16, 17, 18, 19, 20]
+              description:
+                content: |-
+                  The degree provided a strong foundation in computer science, programming, algorithms, and data structures.
+                  - Completed a senior project that utilized **machine learning algorithms** to classify images with an accuracy of 90%.
+                  - Earned a spot on the **Dean's Honor List** for achieving a GPA of *3.8* or higher.
+                  - Participated in multiple hackathons and coding competitions, winning **first place** in two of them.
+              gallery:
+                content:
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+
+            - from: August 2008
+              to: June 2010
+              institution:
+                name: Santa Monica College
+                uri: https://www.google.com
+              title: College
+              skills:
+                type: compact
+                references: skills
+                content: [1, 2, 3, 4, 5, 6, 7]
+              description:
+                content: |-
+                  The degree provided a foundation in mathematics, statistics, and critical thinking.
+                  - Graduated with high honors, earning a **GPA of 3.9** or higher.
+                  - Participated in the Math Club and competed in regional mathematics competitions.
+                  - **Tutored** fellow students in mathematics and statistics.
+                  - **Developed a web application** that helped students track their academic progress and plan their schedules effectively.
+                  - Conducted research on mathematical modeling and presented findings at a **regional conference**.
+                  - Participated in an **internship program** with a local tech company and gained practical experience in software development.
+                  - **Co-authored a paper** on mathematical optimization that was published in a peer-reviewed journal.
+                  - Completed coursework in data science and machine learning, earning top grades in both subjects.
+                  - Received a scholarship for **outstanding academic performance** in mathematics.
+                  - Developed a passion for **open-source software development** and started contributing to several projects in the community.
+              gallery:
+                content:
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image1.jpg
+                    alt: This is what it looks like.
+                  - src: /assets/images/gallery/image2.jpg
+                    alt: This is what it looks like.
+
+            - from: August 2004
+              to: June 2008
+              institution:
+                name: Westchester High School
+                uri: https://www.google.com
+              title: ""
+              skills:
+                type: compact
+                references: skills
+                content: [6, 7, 8, 9, 10]
+              description:
+                content: |-
+                  Graduated with a strong academic record and a passion for science and technology.
+                  - Earned a spot on the &&Principal's Honor Roll&& for achieving a GPA of 4.0 or higher.
+                  - Participated in the Robotics Club and helped design and build a robot that competed in regional competitions.
+                  - Participated in the Science Olympiad and won first place in the physics event.
+                  - Completed Advanced Placement courses in calculus, physics, and computer science, earning top scores on all exams.
+
+      - id: skills
+        title: Skills
+        collection:
+          content:
+            - title: Technical
+              skills:
+                type: normal
+                references: skills
+                content:
+                  [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                  ]
+            - title: Interpersonal
+              skills:
+                type: normal
+                references: skills
+                content: [21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+
+      - id: contact
+        title: Contact
+        row:
+          content:
+            collection:
+              content:
+                - contact:
+                    name: Phone
+                    address: "+1234567890"
+                    uri: tel:+1234567890
+                    image:
+                      src: https://i.imgur.com/CwfKTR8.png
+                      alt: Phone Number Icon
+                - contact:
+                    name: Email
+                    address: example@example.com
+                    uri: mailto:example@example.com?subject=Resume&body=Hello,
+                    image:
+                      src: https://i.imgur.com/iIifhGs.png
+                      alt: Email Address Icon
+                - contact:
+                    name: GitHub
+                    address: github.com/user
+                    uri: https://www.github.com
+                    image:
+                      src: https://i.imgur.com/EnM9omZ.png
+                      alt: GitHub Icon
+                    external: true
+                - contact:
+                    name: LinkedIn
+                    address: linkedin.com/user
+                    uri: https://www.linkedin.com
+                    image:
+                      src: https://i.imgur.com/53V0L9S.png
+                      alt: LinkedIn Icon
+                    external: true
+            formspree:
+              id: abc
+              response: Thank you! I'll revert to you as soon as I can.
+
+skills:
+  - id: 1
+    name: Python
+    image:
+      src: /assets/images/icons/python.png
+      alt: Python
+    score: 90
+    level: Expert
+  - id: 2
+    name: Java
+    image:
+      src: /assets/images/icons/python.png
+      alt: Java
+    score: 85
+    level: Advanced
+  - id: 3
+    name: C++
+    image:
+      src: /assets/images/icons/python.png
+      alt: C++
+    score: 80
+    level: Advanced
+  - id: 4
+    name: JavaScript
+    image:
+      src: /assets/images/icons/python.png
+      alt: JavaScript
+    score: 85
+    level: Advanced
+  - id: 5
+    name: HTML
+    image:
+      src: /assets/images/icons/python.png
+      alt: HTML
+    score: 95
+    level: Expert
+  - id: 6
+    name: CSS
+    image:
+      src: /assets/images/icons/python.png
+      alt: CSS
+    score: 90
+    level: Expert
+  - id: 7
+    name: React
+    image:
+      src: /assets/images/icons/python.png
+      alt: React
+    score: 80
+    level: Advanced
+  - id: 8
+    name: Angular
+    image:
+      src: /assets/images/icons/python.png
+      alt: Angular
+    score: 75
+    level: Intermediate
+  - id: 9
+    name: Node.js
+    image:
+      src: /assets/images/icons/python.png
+      alt: Node.js
+    score: 85
+    level: Advanced
+  - id: 10
+    name: Express.js
+    image:
+      src: /assets/images/icons/python.png
+      alt: Express.js
+    score: 80
+    level: Advanced
+  - id: 11
+    name: MongoDB
+    image:
+      src: /assets/images/icons/python.png
+      alt: MongoDB
+    score: 85
+    level: Advanced
+  - id: 11
+    name: MongoDB
+    image:
+      src: /assets/images/icons/python.png
+      alt: MongoDB
+    score: 75
+    level: Advanced
+  - id: 12
+    name: React Native
+    image:
+      src: /assets/images/icons/python.png
+      alt: React Native
+    score: 80
+    level: Advanced
+  - id: 13
+    name: AngularJS
+    image:
+      src: /assets/images/icons/python.png
+      alt: AngularJS
+    score: 60
+    level: Intermediate
+  - id: 14
+    name: Bootstrap
+    image:
+      src: /assets/images/icons/python.png
+      alt: Bootstrap
+    score: 85
+    level: Advanced
+  - id: 15
+    name: Git
+    image:
+      src: /assets/images/icons/python.png
+      alt: Git
+    score: 90
+    level: Expert
+  - id: 16
+    name: MySQL
+    image:
+      src: /assets/images/icons/python.png
+      alt: MySQL
+    score: 85
+    level: Advanced
+  - id: 17
+    name: PostgreSQL
+    image:
+      src: /assets/images/icons/python.png
+      alt: PostgreSQL
+    score: 75
+    level: Advanced
+  - id: 18
+    name: Oracle
+    image:
+      src: /assets/images/icons/python.png
+      alt: Oracle
+    score: 70
+    level: Intermediate
+  - id: 19
+    name: PHP
+    image:
+      src: /assets/images/icons/python.png
+      alt: PHP
+    score: 80
+    level: Advanced
+  - id: 20
+    name: C#
+    image:
+      src: /assets/images/icons/python.png
+      alt: C#
+    score: 75
+    level: Advanced
+  - id: 21
+    name: Scala
+    image:
+      src: /assets/images/icons/python.png
+      alt: Scala
+    score: 70
+    level: Intermediate
+  - id: 22
+    name: Swift
+    image:
+      src: /assets/images/icons/python.png
+      alt: Swift
+    score: 65
+    level: Intermediate
+  - id: 23
+    name: Kotlin
+    image:
+      src: /assets/images/icons/python.png
+      alt: Kotlin
+    score: 60
+    level: Intermediate
+  - id: 24
+    name: Unity
+    image:
+      src: /assets/images/icons/python.png
+      alt: Unity
+    score: 70
+    level: Intermediate
+  - id: 25
+    name: Unreal Engine
+    image:
+      src: /assets/images/icons/python.png
+      alt: Unreal Engine
+    score: 60
+    level: ""
+  - id: 26
+    name: OpenGL
+    image:
+      src: /assets/images/icons/python.png
+      alt: OpenGL
+    score: 75
+    level: Advanced
+  - id: 27
+    name: Docker
+    image:
+      src: /assets/images/icons/python.png
+      alt: Docker
+    score: 70
+    level: ""
+  - id: 28
+    name: React Native
+    image:
+      src: /assets/images/icons/python.png
+      alt: React Native
+    score: 65
+    level: Intermediate
+  - id: 29
+    name: Vue.js
+    image:
+      src: /assets/images/icons/python.png
+      alt: Vue.js
+    score: 60
+    level: Intermediate
+  - id: 30
+    name: RabbitMQ
+    image:
+      src: /assets/images/icons/python.png
+      alt: RabbitMQ
+    score: 55
+    level: ""
+  - id: 1
+    name: Communication
+    image:
+      src: /assets/images/icons/python.png
+      alt: Communication
+    score:
+    level: Expert
+  - id: 2
+    name: Teamwork
+    image:
+      src: /assets/images/icons/python.png
+      alt: Teamwork
+    score:
+    level: ""
+  - id: 3
+    name: Leadership
+    image:
+      src: /assets/images/icons/python.png
+      alt: Leadership
+    score:
+    level: Advanced
+  - id: 4
+    name: Problem-solving
+    image:
+      src: /assets/images/icons/python.png
+      alt: Problem-solving
+    score:
+    level:
+  - id: 5
+    name: Critical thinking
+    image:
+      src: /assets/images/icons/python.png
+      alt: Critical thinking
+    score:
+    level:
+  - id: 6
+    name: Time management
+    image:
+      src: /assets/images/icons/python.png
+      alt: Time management
+    score:
+    level:
+  - id: 7
+    name: Project management
+    image:
+      src: /assets/images/icons/python.png
+      alt: Project management
+    score:
+    level:
+  - id: 8
+    name: Adaptability
+    image:
+      src: /assets/images/icons/python.png
+      alt: Adaptability
+    score:
+    level:
+  - id: 9
+    name: Creativity
+    image:
+      src: /assets/images/icons/python.png
+      alt: Creativity
+    score:
+    level:
+  - id: 10
+    name: Flexibility
+    image:
+      src: /assets/images/icons/python.png
+      alt: Flexibility
+    score:
+    level:

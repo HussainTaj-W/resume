@@ -1,0 +1,35 @@
+@import "@/styles/_colors";
+
+.channel a {
+  color: $primary-color-2;
+  text-decoration-color: $primary-color-2;
+
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    color: $primary-color-2;
+    text-decoration-color: $primary-color-2;
+  }
+}
+
+@media print {
+  .channel {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    & img {
+      display: none !important;
+    }
+
+    & * {
+      padding: 0 !important;
+      margin: 0 !important;
+      display: inline !important;
+    }
+
+    & a {
+      padding-left: 5pt !important;
+    }
+  }
+}

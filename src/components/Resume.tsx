@@ -2,17 +2,13 @@ import { useState } from "react";
 
 import { Box } from "@chakra-ui/react";
 
+import data from "@/data/data.yml";
+import FactoryComponent from "@/utils/factory";
+
 import "./Resume.css";
 import { ActiveSectionNameContext } from "./ResumeContext";
 import SidebarDrawer from "./SidebarDrawer";
 import SidebarMenu from "./SidebarMenu";
-import Contact from "./sections/Contact";
-import Education from "./sections/Education";
-import Experience from "./sections/Experience";
-import Footer from "./sections/Footer";
-import Header from "./sections/Header";
-import Sections from "./sections/Sections";
-import Skills from "./sections/Skills";
 
 function Resume() {
   const [activeSectionName, setActiveSectionName] = useState("header");
@@ -56,17 +52,12 @@ function Resume() {
             lg: "85%",
           }}
         >
-          <Sections>
-            <Header />
-            <Experience />
-            <Education />
-            <Skills />
-            <Contact />
-          </Sections>
+          <FactoryComponent name="header" props={data.app.header} />
+          <FactoryComponent name="sections" props={data.app.sections} />
         </Box>
       </Box>
       <Box m={1}>
-        <Footer />
+        <FactoryComponent name="footer" props={data.app.footer} />
       </Box>
     </ActiveSectionNameContext.Provider>
   );

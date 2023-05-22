@@ -1,6 +1,6 @@
 import { Box, Text, Image, Progress, Tag } from "@chakra-ui/react";
 
-import ISkill from "@/models/skill";
+import ISkill from "@/types/skill";
 
 import styles from "./styles.module.scss";
 
@@ -10,6 +10,7 @@ interface Props {
 }
 
 function Skill({ data, isCompact = false }: Props) {
+  const iconSize = isCompact ? "1em" : "1.5em";
   return (
     <Box
       w="100%"
@@ -21,13 +22,15 @@ function Skill({ data, isCompact = false }: Props) {
     >
       <Box display="flex" alignItems="center">
         <Image
-          boxSize={isCompact ? "1em" : "1.5em"}
+          className={styles.image}
+          boxSize={iconSize}
           objectFit="cover"
           mr={0.5}
           src={data.image.src}
           alt={data.image.alt}
           userSelect="none"
-          className={styles.image}
+          height={iconSize}
+          width={iconSize}
         />
         <Text fontSize={isCompact ? "sm" : "md"}>{data.name}</Text>
         {data.level && !isCompact ? (
@@ -50,6 +53,7 @@ function Skill({ data, isCompact = false }: Props) {
           size="xs"
           alignSelf="end"
           className={styles.score}
+          aria-label="Skill score"
         />
       ) : null}
     </Box>

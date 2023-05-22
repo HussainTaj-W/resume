@@ -1,13 +1,7 @@
 @media print {
   .skill {
     padding: 0 !important;
+    padding-left: 5pt !important;
     margin: 0 !important;
-  }
-}
-
-@media print {
-  .image,
-  .score {
-    display: none !important;
   }
 }

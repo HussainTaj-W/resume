@@ -1,14 +1,14 @@
 import TimelineEntry from "./TimelineEntry";
 
-interface Props {
-  children: React.ReactNode[];
+export interface TimelineProps {
+  content: Record<string, any>[];
 }
 
-function Timeline({ children }: Props) {
+function Timeline({ content }: TimelineProps) {
   return (
     <>
-      {children.map((child, index) => (
-        <TimelineEntry key={`timeline-entry-${index}`}>{child}</TimelineEntry>
+      {content.map((entry, index) => (
+        <TimelineEntry key={`timeline-entry-${index}`} content={entry} />
       ))}
     </>
   );
