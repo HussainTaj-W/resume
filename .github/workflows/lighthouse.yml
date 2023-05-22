@@ -1,14 +1,5 @@
 name: Lighthouse CI
-on:
-  workflow_run:
-    workflows:
-      - Build and Deploy
-    types:
-      - completed
-    branches:
-      - main
-
-  workflow_dispatch:
+on: push
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
@@ -46,7 +37,7 @@ jobs:
 
       - name: Add summary
         env:
-          LINKS_JSON: ${{ steps.lighthouse.outputs.link }}
+          LINKS_JSON: ${{ steps.lighthouse.outputs.links }}
         run: |
           report_url=$(python -c "import json; data = json.loads(${LINKS_JSON@Q}); print(data.values()[0])")
           echo "## Lighthouse Report" >> $GITHUB_STEP_SUMMARY
