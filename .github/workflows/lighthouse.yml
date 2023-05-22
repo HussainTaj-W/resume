@@ -19,25 +19,21 @@ jobs:
         with:
           urls: ${{ steps.pages_conf.outputs.base_url }}/
           temporaryPublicStorage: true
-          runs: 1
+          runs: 3
 
       - name: Calculate total score
         id: score
         env:
           REPORT_JSON: ${{ steps.lighthouse.outputs.manifest }}
         run: |
-          performance=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['performance'])")
-          accessibility=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['accessibility'])")
-          bestPractices=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['best-practices'])")
-          seo=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['seo'])")
-          pwa=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['pwa'])")
+          performance=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[2]['summary']['performance'])")
+          accessibility=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[2]['summary']['accessibility'])")
+          bestPractices=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[2]['summary']['best-practices'])")
+          seo=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[2]['summary']['seo'])")
+          pwa=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[2]['summary']['pwa'])")
           scores="$performance $accessibility $bestPractices $seo $pwa"
           echo "result=\"$scores\""
           echo "result=$scores" >> $GITHUB_OUTPUT
-
-      - name: print score
-        run: |
-          echo ${{ steps.score.outputs.result }}
 
       - name: Set Badge
         uses: RubbaBoy/BYOB@v1.3.0
