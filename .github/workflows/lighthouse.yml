@@ -32,10 +32,9 @@ jobs:
           seo=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['seo'])")
           pwa=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['pwa'])")
           scores="$performance $accessibility $bestPractices $seo $pwa"
-          echo "{result}={\"$scores\"}"
-          echo "{result}={\"$scores\"}" >> $GITHUB_OUTPUT
-          echo "::set-output name=result::{\"$scores\"}"
-      
+          echo "result=\"$scores\""
+          echo "result=$scores" >> $GITHUB_OUTPUT
+
       - name: print score
         run: |
           echo ${{ steps.score.outputs.result }}
