@@ -34,6 +34,7 @@ jobs:
           scores="$performance $accessibility $bestPractices $seo $pwa"
           echo "{result}={\"$scores\"}"
           echo "{result}={\"$scores\"}" >> $GITHUB_OUTPUT
+          echo "::set-output name=result::{\"$scores\"}"
       
       - name: print score
         run: |
@@ -44,6 +45,6 @@ jobs:
         with:
           NAME: lighthouse
           LABEL: "LightHouse Score"
-          STATUS: "${{ steps.score.outputs.result }}"
+          STATUS: ${{ steps.score.outputs.result }}
           COLOR: AAAAAA
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
