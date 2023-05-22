@@ -28,7 +28,7 @@ jobs:
         run: |
           performance=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['performance'])")
           accessibility=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['accessibility'])")
-          best-practices=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['best-practices'])")
+          bestPractices=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['best-practices'])")
           seo=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['seo'])")
           pwa=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['pwa'])")
           total=$(echo "scale=2; ($performance + $accessibility + $bestPractices + $seo + $pwa) / 5" | bc)
