@@ -19,7 +19,7 @@ jobs:
         with:
           urls: ${{ steps.pages_conf.outputs.base_url }}/
           temporaryPublicStorage: true
-          runs: 2
+          runs: 3
 
       - name: Calculate total score
         id: score
