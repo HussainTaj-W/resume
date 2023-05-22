@@ -1,0 +1,21 @@
+name: Lighthouse CI
+on: push
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+        id: pages_conf
+        with:
+          enablement: true
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Audit Resume using Lighthouse
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: ${{ steps.pages_conf.outputs.base_url }}
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
