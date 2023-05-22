@@ -19,12 +19,12 @@ jobs:
         with:
           urls: ${{ steps.pages_conf.outputs.base_url }}/
           temporaryPublicStorage: true
-          runs: 3
+          runs: 1
 
       - name: Calculate total score
         id: score
         run: |
-          performance=$(python -c "import json; data = json.loads('${{ steps.lighthouse.outputs.manifest }}'); print(data[0]['summary']['performance'])")
+          performance=$(python -c 'import json; data = json.loads(\'${{ steps.lighthouse.outputs.manifest }}\'); print(data[0]["summary"]["performance"])')
           echo "{total}={$performance}" >> $GITHUB_OUTPUT
 
       - name: Set Badge
