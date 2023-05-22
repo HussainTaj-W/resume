@@ -19,7 +19,7 @@ jobs:
         with:
           urls: ${{ steps.pages_conf.outputs.base_url }}/
           temporaryPublicStorage: true
-          runs: 3
+          runs: 2
 
       - name: Calculate total score
         id: score
@@ -39,7 +39,7 @@ jobs:
         env:
           LINKS_JSON: ${{ steps.lighthouse.outputs.links }}
         run: |
-          report_url=$(python -c "import json; data = json.loads(${LINKS_JSON@Q}); print(data.values()[0])")
+          report_url=$(python -c "import json; data = json.loads(${LINKS_JSON@Q}); print(list(data.values())[0])")
           echo "## Lighthouse Report" >> $GITHUB_STEP_SUMMARY
           echo "[Lighthouse Report]($report_url)" >> $GITHUB_STEP_SUMMARY
 
