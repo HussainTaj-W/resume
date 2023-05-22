@@ -1,5 +1,14 @@
 name: Lighthouse CI
-on: push
+on:
+  workflow_run:
+    workflows:
+      - Build and Deploy
+    types:
+      - completed
+    branches:
+      - main
+
+  workflow_dispatch:
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
