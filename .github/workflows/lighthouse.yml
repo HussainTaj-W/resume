@@ -34,6 +34,10 @@ jobs:
           scores="$performance $accessibility $bestPractices $seo $pwa"
           echo "{result}={\"$scores\"}"
           echo "{result}={\"$scores\"}" >> $GITHUB_OUTPUT
+      
+      - name: print score
+        run: |
+          echo ${{ steps.score.outputs.result }}
 
       - name: Set Badge
         uses: RubbaBoy/BYOB@v1.3.0
