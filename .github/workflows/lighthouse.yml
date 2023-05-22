@@ -26,7 +26,7 @@ jobs:
         env:
           REPORT_JSON: ${{ steps.lighthouse.outputs.manifest }}
         run: |
-          performance=$(python -c "import json; data = json.loads('${REPORT_JSON@Q}'); print(data[0]['summary']['performance'])")
+          performance=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[0]['summary']['performance'])")
           echo "{total}={$performance}" >> $GITHUB_OUTPUT
 
       - name: Set Badge
