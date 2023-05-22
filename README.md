@@ -14,7 +14,7 @@ A resume / portfolio / cv made in React.
 ### Adding your information
 
 1. Go to [./src/data/data.yml](./src/data/data.yml) and populate it with your information.
-2. You can add your images or files under [./src/assets/](./src/assets/). To use them in data YMLs, you can use the following format `/assets/your-file.ext`.
+2. You can add your images or files under [./src/assets/](./src/assets/). To use them in data YMLs, you can use the following format `assets/your-file.ext`.
 3. Use [formspree.io](formspree.io/) to create an id for your contact form.
 4. Update [./index.html](./index.html) and fill in your metadata.
 
