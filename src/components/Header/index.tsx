@@ -59,8 +59,9 @@ function Header(props: HeaderProps) {
               objectFit="cover"
               ml={2}
               boxSize={{
-                base: "200px",
-                md: "300px",
+                sm: "150px",
+                md: "200px",
+                lg: "300px",
               }}
               userSelect="none"
               height={100}
