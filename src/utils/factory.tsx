@@ -14,7 +14,6 @@ import Sections, { SectionsProps } from "@/components/Sections";
 import Skills, { SkillsProps } from "@/components/Skills";
 import Timeline, { TimelineProps } from "@/components/Timeline";
 import appData from "@/data/data.yml";
-import ISkill from "@/types/skill";
 
 export type FactoryComponentProps = {
   name: string;
@@ -29,8 +28,14 @@ export default function FactoryComponent({
 
   if (props.references === "skills") {
     data = deepCopy(props);
-    data.content = appData.skills.filter((skill: ISkill) => {
-      return props.content.includes(skill.id);
+    data.content = (data.content as (string | number)[]).map((id) => {
+      const skill = appData.skills.find((skill) => skill.id === id);
+      if (!skill) {
+        throw Error(
+          `Skill ID ${id} does not have a corresponding definition in data.`
+        );
+      }
+      return skill;
     });
   }
 
