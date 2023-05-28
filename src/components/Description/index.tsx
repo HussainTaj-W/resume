@@ -29,7 +29,7 @@ function Description({ content, threshold = 5 }: DescriptionProps) {
   );
 
   return (
-    <Box>
+    <Box my={4}>
       <Box className={styles.content}>
         <Box
           className={
