@@ -3,14 +3,14 @@ import { Box, Link, Tag, TagLabel, Image } from "@chakra-ui/react";
 
 import IImage from "@/types/image";
 
-interface Link {
+interface LinkItem {
   name: string;
   uri: string;
   image: IImage;
 }
 
 export interface LinksProps {
-  content?: Link[];
+  content?: LinkItem[];
 }
 
 export default function Links({ content }: LinksProps) {

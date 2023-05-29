@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-import { Box, Spacer } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { deepCopy } from "deep-copy-ts";
 
 import CatWalk, { CatWalkProps } from "@/components/CatWalk";

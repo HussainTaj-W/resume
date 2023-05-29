@@ -1,7 +1,5 @@
-import { ExternalLinkIcon, LinkIcon } from "@chakra-ui/icons";
 import {
   Box,
-  Link,
   Card,
   CardBody,
   CardHeader,
@@ -16,8 +14,6 @@ import {
   ModalOverlay,
   Text,
   useDisclosure,
-  Tag,
-  TagLabel,
 } from "@chakra-ui/react";
 
 import IImage from "@/types/image";
