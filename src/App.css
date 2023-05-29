@@ -1,3 +1,38 @@
 .collapse-css-transition {
   transition: height 500ms ease-out;
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cfd8dc transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #eceff1;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #eceff1;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #cfd8dc;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #b0bec5;
+}

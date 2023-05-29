@@ -1,7 +1,9 @@
 import { ReactElement } from "react";
 
+import { Box, Spacer } from "@chakra-ui/react";
 import { deepCopy } from "deep-copy-ts";
 
+import CatWalk, { CatWalkProps } from "@/components/CatWalk";
 import Collection, { CollectionProps } from "@/components/Collection";
 import Contact, { ContactProps } from "@/components/Contact";
 import Description, { DescriptionProps } from "@/components/Description";
@@ -9,10 +11,12 @@ import Footer, { FooterProps } from "@/components/Footer";
 import Formspree, { FormspreeProps } from "@/components/Formspree";
 import Gallery, { GalleryProps } from "@/components/Gallery";
 import Header, { HeaderProps } from "@/components/Header";
+import Links, { LinksProps } from "@/components/Links";
 import Row, { RowProps } from "@/components/Row";
 import Sections, { SectionsProps } from "@/components/Sections";
 import Skills, { SkillsProps } from "@/components/Skills";
 import Timeline, { TimelineProps } from "@/components/Timeline";
+import Work, { WorkProps } from "@/components/Work";
 import appData from "@/data/data.yml";
 
 export type FactoryComponentProps = {
@@ -62,6 +66,14 @@ export default function FactoryComponent({
       return <Sections {...(data as SectionsProps)} />;
     case "row":
       return <Row {...(data as RowProps)} />;
+    case "work":
+      return <Work {...(data as WorkProps)} />;
+    case "links":
+      return <Links {...(data as LinksProps)} />;
+    case "spacer":
+      return <Box m={props.size} />;
+    case "catwalk":
+      return <CatWalk {...(data as CatWalkProps)} />;
 
     default:
       throw new Error(`Unknown component name: ${name}`);
@@ -69,8 +81,12 @@ export default function FactoryComponent({
 }
 
 export function renderFactoryComponents(
-  content: Record<string, any>
+  content?: Record<string, any> | null
 ): JSX.Element[] {
+  if (!content) {
+    return [];
+  }
+
   return Object.entries(content).map((entry, index) => {
     return (
       <FactoryComponent
