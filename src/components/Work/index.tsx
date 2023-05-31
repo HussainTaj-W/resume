@@ -59,13 +59,7 @@ export default function Work({
           <Text noOfLines={3}>{description}</Text>
         </CardBody>
       </Card>
-      <Modal
-        isOpen={isOpen}
-        onClose={onClose}
-        isCentered
-        scrollBehavior="inside"
-        size="2xl"
-      >
+      <Modal isOpen={isOpen} onClose={onClose} isCentered size="2xl">
         <ModalOverlay />
         <ModalContent overflow="clip">
           <ModalHeader>{title}</ModalHeader>

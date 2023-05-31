@@ -86,7 +86,7 @@ app:
                 uri: https://www.google.com
               title: Lead Developer
               skills:
-                type: compact
+                type: icon
                 references: skills
                 content: [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
               description:
@@ -258,7 +258,7 @@ app:
           content:
             - title: Technical
               skills:
-                type: normal
+                type: full
                 references: skills
                 content:
                   [
@@ -285,7 +285,7 @@ app:
                   ]
             - title: Interpersonal
               skills:
-                type: normal
+                type: full
                 references: skills
                 content: [21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
 

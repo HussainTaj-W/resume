@@ -6,12 +6,12 @@ import ISkill from "@/types/skill";
 import styles from "./styles.module.scss";
 
 export interface SkillsProps {
-  type: "compact" | "normal";
+  type: "compact" | "full" | "icon";
   content: ISkill[];
 }
 
 function Skills({ type, content }: SkillsProps) {
-  const isCompact = type === "compact";
+  const isCompact = type === "compact" || type === "icon";
 
   return (
     <Wrap>
@@ -19,10 +19,11 @@ function Skills({ type, content }: SkillsProps) {
         <WrapItem
           minW={isCompact ? "auto" : "12rem"}
           p={isCompact ? 0 : 1}
+          m={isCompact ? 0 : 1}
           key={`${skill.id}-${index}`}
           className={styles.skill}
         >
-          <Skill data={skill} isCompact={isCompact} />
+          <Skill data={skill} type={type} />
         </WrapItem>
       ))}
     </Wrap>
