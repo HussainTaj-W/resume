@@ -5,6 +5,7 @@ import { deepCopy } from "deep-copy-ts";
 
 import CatWalk, { CatWalkProps } from "@/components/CatWalk";
 import Collection, { CollectionProps } from "@/components/Collection";
+import Column, { ColumnProps } from "@/components/Column";
 import Contact, { ContactProps } from "@/components/Contact";
 import Description, { DescriptionProps } from "@/components/Description";
 import Footer, { FooterProps } from "@/components/Footer";
@@ -74,6 +75,8 @@ export default function FactoryComponent({
       return <Box m={props.size} />;
     case "catwalk":
       return <CatWalk {...(data as CatWalkProps)} />;
+    case "column":
+      return <Column {...(data as ColumnProps)} />;
 
     default:
       throw new Error(`Unknown component name: ${name}`);

@@ -300,66 +300,68 @@ app:
                   alt: An App
                 description: An App is a Flutter app that helps you keep track of your daily expenses.
                 content:
-                  links:
+                  column:
                     content:
-                      - name: GitHub
-                        uri: https://www.github.com
-                        image:
-                          src: assets/images/icons/github.png
-                          alt: GitHub Icon
-                      - name: Play Store
-                        uri: https://www.google.com
-                        image:
-                          src: assets/images/icons/play-store.png
-                          alt: Play Store Icon
-                      - name: App Store
-                        uri: https://www.google.com
-                        image:
-                          src: assets/images/icons/app-store.png
-                          alt: App Store Icon
-                  spacer:
-                    size: 4
-                  skills:
-                    type: compact
-                    references: skills
-                    content: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-                  description:
-                    content: |
-                      An App is a Flutter app that helps you keep track of your daily expenses.
-                      - Developed the app using Flutter and Dart.
-                      - Used Firebase for authentication and data storage.
-                      - Implemented a custom UI that is both beautiful and functional.
-                      - Integrated Google Maps to display the user's location.
-                      - Added support for multiple languages.
-                      - Optimized the app for performance and memory usage.
-                      - Tested the app on multiple devices to ensure compatibility.
-                      - Published the app on the Play Store and App Store.
-                  gallery:
-                    content:
-                      - src: assets/images/gallery/image1.jpg
-                        alt: This is what it looks like.
-                      - src: assets/images/gallery/image2.jpg
-                        alt: This is what it looks like.
-                      - src: assets/images/gallery/image1.jpg
-                        alt: This is what it looks like.
-                      - src: assets/images/gallery/image2.jpg
-                        alt: This is what it looks like.
-                      - src: assets/images/gallery/image1.jpg
-                        alt: This is what it looks like.
-                      - src: assets/images/gallery/image2.jpg
-                        alt: This is what it looks like.
-                      - src: assets/images/gallery/image1.jpg
-                        alt: This is what it looks like.
-                      - src: assets/images/gallery/image2.jpg
-                        alt: This is what it looks like.
-                      - src: assets/images/gallery/image1.jpg
-                        alt: This is what it looks like.
-                      - src: assets/images/gallery/image2.jpg
-                        alt: This is what it looks like.
-                      - src: assets/images/gallery/image1.jpg
-                        alt: This is what it looks like.
-                      - src: assets/images/gallery/image2.jpg
-                        alt: This is what it looks like.
+                      - links:
+                          content:
+                            - name: GitHub
+                              uri: https://www.github.com
+                              image:
+                                src: assets/images/icons/github.png
+                                alt: GitHub Icon
+                            - name: Play Store
+                              uri: https://www.google.com
+                              image:
+                                src: assets/images/icons/play-store.png
+                                alt: Play Store Icon
+                            - name: App Store
+                              uri: https://www.google.com
+                              image:
+                                src: assets/images/icons/app-store.png
+                                alt: App Store Icon
+                      - spacer:
+                          size: 4
+                      - skills:
+                          type: compact
+                          references: skills
+                          content: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                      - description:
+                          content: |
+                            An App is a Flutter app that helps you keep track of your daily expenses.
+                            - Developed the app using Flutter and Dart.
+                            - Used Firebase for authentication and data storage.
+                            - Implemented a custom UI that is both beautiful and functional.
+                            - Integrated Google Maps to display the user's location.
+                            - Added support for multiple languages.
+                            - Optimized the app for performance and memory usage.
+                            - Tested the app on multiple devices to ensure compatibility.
+                            - Published the app on the Play Store and App Store.
+                      - gallery:
+                          content:
+                            - src: assets/images/gallery/image1.jpg
+                              alt: This is what it looks like.
+                            - src: assets/images/gallery/image2.jpg
+                              alt: This is what it looks like.
+                            - src: assets/images/gallery/image1.jpg
+                              alt: This is what it looks like.
+                            - src: assets/images/gallery/image2.jpg
+                              alt: This is what it looks like.
+                            - src: assets/images/gallery/image1.jpg
+                              alt: This is what it looks like.
+                            - src: assets/images/gallery/image2.jpg
+                              alt: This is what it looks like.
+                            - src: assets/images/gallery/image1.jpg
+                              alt: This is what it looks like.
+                            - src: assets/images/gallery/image2.jpg
+                              alt: This is what it looks like.
+                            - src: assets/images/gallery/image1.jpg
+                              alt: This is what it looks like.
+                            - src: assets/images/gallery/image2.jpg
+                              alt: This is what it looks like.
+                            - src: assets/images/gallery/image1.jpg
+                              alt: This is what it looks like.
+                            - src: assets/images/gallery/image2.jpg
+                              alt: This is what it looks like.
 
             - work:
                 title: A website
