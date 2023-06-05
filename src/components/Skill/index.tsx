@@ -1,5 +1,6 @@
-import { Box, Text, Image, Progress, Tag, Tooltip } from "@chakra-ui/react";
+import { Box, Text, Image, Progress, Tag } from "@chakra-ui/react";
 
+import TooltipTouch from "@/components/TooltipTouch";
 import ISkill from "@/types/skill";
 
 import styles from "./styles.module.scss";
@@ -16,7 +17,7 @@ function Skill({ data, type = "full" }: Props) {
   const isFull = type === "full";
 
   return (
-    <Tooltip
+    <TooltipTouch
       label={data.name}
       aria-label="A tooltip"
       isDisabled={!isIcon}
@@ -71,7 +72,7 @@ function Skill({ data, type = "full" }: Props) {
           />
         ) : null}
       </Box>
-    </Tooltip>
+    </TooltipTouch>
   );
 }
 
