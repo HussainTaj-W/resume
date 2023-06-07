@@ -1,0 +1,50 @@
+from: February 2021
+to: Present
+institution:
+  name: DEF Tech
+  uri: https://www.google.com
+title: Software Engineer
+skills:
+  type: compact
+  references: skills
+  content: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+description:
+  format: markdown
+  content: |-
+    Worked on developing complex software systems used by *thousands of users* daily.
+    - Received multiple patents for **innovative ideas**.
+    - Contributed to the development of a system that **increased company revenue by 15%**.
+    - **Mentored** junior developers and provided guidance on best practices.
+    - Developed a machine learning algorithm that **improved the accuracy** of the company's recommendation system by *25%*.
+    - Reduced the application launch time **by 50%** by implementing efficient caching strategies.
+    - Conducted a series of training sessions on software testing that led to a **20% reduction** in production defects.
+    - Introduced a code review process that resulted in a *30% decrease in code errors* and improved code quality.
+    - Led the development of a new feature that allowed users to customize their profile, resulting in a 15% increase in user engagement.
+gallery:
+  content:
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.

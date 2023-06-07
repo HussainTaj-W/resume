@@ -6,17 +6,19 @@ import imageminPngQuant from "imagemin-pngquant";
 import imageminSvgGo from "imagemin-svgo";
 import imageminWebp from "imagemin-webp";
 import path from "path";
+import importYAML from "rollup-plugin-import-yaml";
 import { defineConfig, loadEnv } from "vite";
 import { compression } from "vite-plugin-compression2";
 import eslint from "vite-plugin-eslint";
 import { viteStaticCopy } from "vite-plugin-static-copy";
-import pluginYaml from "vite-plugin-yaml2";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), "");
+  const root = process.cwd();
+  const env = loadEnv(mode, root, "");
 
   return {
+    root,
     base: env.BASE_SITE_URL,
     build: {
       rollupOptions: {
@@ -31,7 +33,11 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
       eslint(),
-      pluginYaml(),
+      importYAML({
+        root,
+        isTS: true,
+        shouldFollowReferences: true,
+      }),
       viteStaticCopy({
         targets: [
           {
