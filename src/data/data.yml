@@ -31,7 +31,9 @@ app:
       - id: skills
         title: Skills
         collection:
-          content: (( include ./src/data/skills/skills.yml ))
+          content:
+            # prettier-ignore
+            (( include ./src/data/skills/skills.yml ))
 
       - id: portfolio
         title: Portfolio
