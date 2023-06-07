@@ -1,0 +1,44 @@
+from: June 2018
+to: January 2021
+institution:
+  name: ABC Startup
+  uri: https://www.google.com
+title: Lead Developer
+skills:
+  type: icon
+  references: skills
+  content: [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+description:
+  content: |-
+    Built the entire product from scratch and launched it within the desired timeline.
+    - Awarded the **"Employee of the Year"** award for successful product launch.
+    - Developed a highly efficient codebase that **reduced load times by *30%***.
+    - **Mentored** junior developers and helped them grow within the organization.
+gallery:
+  content:
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.

@@ -1,0 +1,34 @@
+from: September 2010
+to: June 2014
+institution:
+  name: University
+  uri: https://www.google.com
+title: Bachelor of Science in Computer Science
+skills:
+  type: compact
+  references: skills
+  content: [13, 14, 15, 16, 17, 18, 19, 20]
+description:
+  content: |-
+    The degree provided a strong foundation in computer science, programming, algorithms, and data structures.
+    - Completed a senior project that utilized **machine learning algorithms** to classify images with an accuracy of 90%.
+    - Earned a spot on the **Dean's Honor List** for achieving a GPA of *3.8* or higher.
+    - Participated in multiple hackathons and coding competitions, winning **first place** in two of them.
+gallery:
+  content:
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.

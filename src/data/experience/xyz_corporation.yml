@@ -1,0 +1,36 @@
+from: May 2016
+to: May 2018
+institution:
+  name: XYZ Corporation
+  uri: https://www.google.com
+title: Software Engineer
+skills:
+  type: compact
+  references: skills
+  content: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+description:
+  content: |-
+    Worked on developing and maintaining the company's flagship mobile app.
+    - Promoted to a senior position within *18 months* of joining the company.
+    - Developed a new feature that **increased user engagement by 20%**.
+    - Received the **"Rising Star"** award for exceptional performance.
+gallery:
+  content:
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.

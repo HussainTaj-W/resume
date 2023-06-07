@@ -1,0 +1,33 @@
+from: August 2008
+to: June 2010
+institution:
+  name: Santa Monica College
+  uri: https://www.google.com
+title: College
+skills:
+  type: compact
+  references: skills
+  content: [1, 2, 3, 4, 5, 6, 7]
+description:
+  content: |-
+    The degree provided a foundation in mathematics, statistics, and critical thinking.
+    - Graduated with high honors, earning a **GPA of 3.9** or higher.
+    - Participated in the Math Club and competed in regional mathematics competitions.
+    - **Tutored** fellow students in mathematics and statistics.
+    - **Developed a web application** that helped students track their academic progress and plan their schedules effectively.
+    - Conducted research on mathematical modeling and presented findings at a **regional conference**.
+    - Participated in an **internship program** with a local tech company and gained practical experience in software development.
+    - **Co-authored a paper** on mathematical optimization that was published in a peer-reviewed journal.
+    - Completed coursework in data science and machine learning, earning top grades in both subjects.
+    - Received a scholarship for **outstanding academic performance** in mathematics.
+    - Developed a passion for **open-source software development** and started contributing to several projects in the community.
+gallery:
+  content:
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image1.jpg
+      alt: This is what it looks like.
+    - src: assets/images/gallery/image2.jpg
+      alt: This is what it looks like.

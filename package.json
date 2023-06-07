@@ -25,7 +25,6 @@
     "react-scroll": "^1.8.9"
   },
   "devDependencies": {
-    "path": "^0.12.7",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
@@ -44,14 +43,15 @@
     "imagemin-svgo": "^10.0.1",
     "imagemin-webp": "^8.0.0",
     "lint": "^1.1.2",
+    "path": "^0.12.7",
     "prettier": "2.8.8",
     "rollup-plugin-gzip": "^3.1.0",
+    "rollup-plugin-import-yaml": "^0.0.4",
     "sass": "^1.62.1",
     "typescript": "^5.0.4",
     "vite": "^4.3.5",
     "vite-plugin-compression2": "^0.9.1",
     "vite-plugin-eslint": "^1.8.1",
-    "vite-plugin-static-copy": "^0.15.0",
-    "vite-plugin-yaml2": "^1.1.5"
+    "vite-plugin-static-copy": "^0.15.0"
   }
 }

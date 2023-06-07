@@ -1,0 +1,17 @@
+from: August 2004
+to: June 2008
+institution:
+  name: Westchester High School
+  uri: https://www.google.com
+title: ""
+skills:
+  type: compact
+  references: skills
+  content: [6, 7, 8, 9, 10]
+description:
+  content: |-
+    Graduated with a strong academic record and a passion for science and technology.
+    - Earned a spot on the &&Principal's Honor Roll&& for achieving a GPA of 4.0 or higher.
+    - Participated in the Robotics Club and helped design and build a robot that competed in regional competitions.
+    - Participated in the Science Olympiad and won first place in the physics event.
+    - Completed Advanced Placement courses in calculus, physics, and computer science, earning top scores on all exams.

@@ -1,0 +1,30 @@
+- contact:
+    name: Phone
+    address: "+1234567890"
+    uri: tel:+1234567890
+    image:
+      src: assets/images/icons/phone.png
+      alt: Phone Number Icon
+- contact:
+    name: Email
+    address: example@example.com
+    uri: mailto:example@example.com?subject=Resume&body=Hello,
+    image:
+      src: assets/images/icons/email.png
+      alt: Email Address Icon
+- contact:
+    name: GitHub
+    address: github.com/user
+    uri: https://www.github.com
+    image:
+      src: assets/images/icons/github.png
+      alt: GitHub Icon
+    external: true
+- contact:
+    name: LinkedIn
+    address: linkedin.com/user
+    uri: https://www.linkedin.com
+    image:
+      src: assets/images/icons/linkedin.png
+      alt: LinkedIn Icon
+    external: true
