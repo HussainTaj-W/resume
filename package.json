@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
-    "@chakra-ui/react": "^2.6.1",
+    "@chakra-ui/react": "^2.7.0",
     "@formspree/react": "^2.4.1",
     "@kunukn/react-collapse": "^2.2.10",
     "deep-copy-ts": "^0.5.4",
