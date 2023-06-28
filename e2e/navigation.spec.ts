@@ -43,7 +43,7 @@ test.describe("navigation", () => {
 
       const headingText = await headingElement.textContent();
       expect(
-        headingText,
+        headingText + 'fail',
         `Heading for ${section.id} is not ${section.title}`
       ).toEqual(section.title);
     }
