@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "tsc --noEmit && vite",
     "build": "cross-env NODE_ENV=production tsc && vite build",
+    "build:dev": "cross-env NODE_ENV=development BASE_SITE_URL='./' tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .tsx,.ts .",
     "prettier": "prettier . --ignore-path .gitignore --write",
     "prettier:check": "prettier . --ignore-path .gitignore --check",
-    "type:check": "tsc"
+    "type:check": "tsc",
+    "test:e2e": "npx playwright test"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
@@ -25,6 +27,7 @@
     "react-scroll": "^1.8.9"
   },
   "devDependencies": {
+    "@playwright/test": "^1.35.1",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
@@ -35,6 +38,7 @@
     "@vheemstra/vite-plugin-imagemin": "^1.0.9",
     "@vitejs/plugin-react": "^4.0.1",
     "cross-env": "^7.0.3",
+    "cross-var": "^1.1.0",
     "eslint": "^8.40.0",
     "eslint-config-react-app": "^7.0.1",
     "imagemin-gifsicle": "^7.0.0",
@@ -46,7 +50,7 @@
     "path": "^0.12.7",
     "prettier": "2.8.8",
     "rollup-plugin-gzip": "^3.1.0",
-    "rollup-plugin-import-yaml": "^0.0.5",
+    "rollup-plugin-import-yaml": "^0.0.6",
     "sass": "^1.63.4",
     "typescript": "^5.1.3",
     "vite": "^4.3.9",

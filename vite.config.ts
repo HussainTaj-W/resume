@@ -37,6 +37,7 @@ export default defineConfig(({ mode }) => {
         root,
         isTS: true,
         shouldFollowReferences: true,
+        exportResult: true,
       }),
       viteStaticCopy({
         targets: [
