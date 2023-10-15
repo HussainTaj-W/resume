@@ -15,7 +15,7 @@
     "test:e2e": "npx playwright test"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.1.0",
+    "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.0",
     "@formspree/react": "^2.4.4",
     "@kunukn/react-collapse": "^2.2.10",
