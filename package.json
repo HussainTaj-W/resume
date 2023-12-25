@@ -38,7 +38,7 @@
     "@vheemstra/vite-plugin-imagemin": "^1.1.5",
     "@vitejs/plugin-react": "^4.1.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.47.0",
+    "eslint": "^8.56.0",
     "eslint-config-react-app": "^7.0.1",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-mozjpeg": "^10.0.0",
