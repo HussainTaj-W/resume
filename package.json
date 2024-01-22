@@ -47,7 +47,7 @@
     "imagemin-webp": "^8.0.0",
     "lint": "^1.1.2",
     "path": "^0.12.7",
-    "prettier": "2.8.8",
+    "prettier": "3.2.4",
     "rollup-plugin-gzip": "^3.1.0",
     "rollup-plugin-import-yaml": "^0.0.6",
     "sass": "^1.66.1",
