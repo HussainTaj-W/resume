@@ -1,6 +1,5 @@
-import { Box } from "@chakra-ui/react";
-
 import { renderFactoryComponents } from "@/utils/factory";
+import { Box } from "@chakra-ui/react";
 
 export interface CatWalkProps {
   content?: Record<string, any>[];

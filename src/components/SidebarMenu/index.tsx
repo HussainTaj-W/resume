@@ -1,11 +1,9 @@
-import { useCallback, useContext } from "react";
-
-import { Box, Button } from "@chakra-ui/react";
-
 import appData from "@/data/data.yml";
 import IHeader from "@/types/header";
 import ISection from "@/types/section";
 import { scrollToName } from "@/utils/scroll-handler";
+import { Box, Button } from "@chakra-ui/react";
+import { useCallback, useContext } from "react";
 
 import { ActiveSectionNameContext } from "../ResumeContext";
 import styles from "./styles.module.scss";
@@ -16,7 +14,7 @@ interface Props {
 
 function SidebarMenu({ onSelectedItem }: Props) {
   const { activeSectionName, setActiveSectionName } = useContext(
-    ActiveSectionNameContext
+    ActiveSectionNameContext,
   );
 
   const onButtonClick = useCallback(
@@ -28,7 +26,7 @@ function SidebarMenu({ onSelectedItem }: Props) {
         onSelectedItem?.call({}, name);
       }
     },
-    [onSelectedItem, setActiveSectionName]
+    [onSelectedItem, setActiveSectionName],
   );
 
   let menuItems = (appData.app.sections.content as ISection[]).map((item) => ({

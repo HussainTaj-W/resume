@@ -1,10 +1,8 @@
-import React, { useContext } from "react";
-
-import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
-
 import { ActiveSectionNameContext } from "@/components/ResumeContext";
 import IHeader from "@/types/header";
 import { scrollToName } from "@/utils/scroll-handler";
+import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
+import React, { useContext } from "react";
 
 import styles from "./styles.module.scss";
 

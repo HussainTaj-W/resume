@@ -1,7 +1,6 @@
-import { LinkIcon } from "@chakra-ui/icons";
-import { Box, Link, Tag, TagLabel, Image } from "@chakra-ui/react";
-
 import IImage from "@/types/image";
+import { LinkIcon } from "@chakra-ui/icons";
+import { Box, Image, Link, Tag, TagLabel } from "@chakra-ui/react";
 
 interface LinkItem {
   name: string;

@@ -1,7 +1,6 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Box, Link, Text, Image } from "@chakra-ui/react";
-
 import IImage from "@/types/image";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Box, Image, Link, Text } from "@chakra-ui/react";
 
 import styles from "./styles.module.scss";
 

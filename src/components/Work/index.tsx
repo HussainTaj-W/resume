@@ -1,3 +1,5 @@
+import IImage from "@/types/image";
+import { renderFactoryComponents } from "@/utils/factory";
 import {
   Box,
   Card,
@@ -15,9 +17,6 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
-
-import IImage from "@/types/image";
-import { renderFactoryComponents } from "@/utils/factory";
 
 export interface WorkProps {
   title: string;

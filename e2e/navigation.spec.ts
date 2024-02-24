@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import fs from "fs";
 import jsYaml from "js-yaml";
 
@@ -11,7 +11,7 @@ test.describe("navigation", () => {
     page,
   }) => {
     const data = jsYaml.load(
-      fs.readFileSync("src/data/data.generated.yml", "utf8")
+      fs.readFileSync("src/data/data.generated.yml", "utf8"),
     );
     let sections = data.app.sections.content as Array<any>;
     sections = [
@@ -38,13 +38,13 @@ test.describe("navigation", () => {
       });
       expect(
         headingElement,
-        `Heading for ${section.title} is not visible`
+        `Heading for ${section.title} is not visible`,
       ).toBeVisible();
 
       const headingText = await headingElement.textContent();
       expect(
         headingText,
-        `Heading for ${section.id} is not ${section.title}`
+        `Heading for ${section.id} is not ${section.title}`,
       ).toEqual(section.title);
     }
   });

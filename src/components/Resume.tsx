@@ -1,9 +1,7 @@
-import { useState } from "react";
-
-import { Box } from "@chakra-ui/react";
-
 import data from "@/data/data.yml";
 import FactoryComponent from "@/utils/factory";
+import { Box } from "@chakra-ui/react";
+import { useState } from "react";
 
 import "./Resume.css";
 import { ActiveSectionNameContext } from "./ResumeContext";

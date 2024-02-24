@@ -1,7 +1,6 @@
-import { Wrap, WrapItem } from "@chakra-ui/react";
-
 import Skill from "@/components/Skill";
 import ISkill from "@/types/skill";
+import { Wrap, WrapItem } from "@chakra-ui/react";
 
 import styles from "./styles.module.scss";
 

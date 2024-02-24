@@ -1,8 +1,6 @@
-import ModalImage from "react-modal-image";
-
-import { Box } from "@chakra-ui/react";
-
 import IImage from "@/types/image";
+import { Box } from "@chakra-ui/react";
+import ModalImage from "react-modal-image";
 
 import styles from "./styles.module.scss";
 
