@@ -1,15 +1,14 @@
-import React from "react";
-
 import { HamburgerIcon } from "@chakra-ui/icons";
 import {
-  useDisclosure,
   Drawer,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
   DrawerBody,
+  DrawerCloseButton,
+  DrawerContent,
+  DrawerOverlay,
   IconButton,
+  useDisclosure,
 } from "@chakra-ui/react";
+import React from "react";
 
 import SidebarMenu from "../SidebarMenu";
 import styles from "./styles.module.scss";

@@ -1,8 +1,3 @@
-import { ReactElement } from "react";
-
-import { Box } from "@chakra-ui/react";
-import { deepCopy } from "deep-copy-ts";
-
 import CatWalk, { CatWalkProps } from "@/components/CatWalk";
 import Collection, { CollectionProps } from "@/components/Collection";
 import Column, { ColumnProps } from "@/components/Column";
@@ -19,6 +14,9 @@ import Skills, { SkillsProps } from "@/components/Skills";
 import Timeline, { TimelineProps } from "@/components/Timeline";
 import Work, { WorkProps } from "@/components/Work";
 import appData from "@/data/data.yml";
+import { Box } from "@chakra-ui/react";
+import { deepCopy } from "deep-copy-ts";
+import { ReactElement } from "react";
 
 export type FactoryComponentProps = {
   name: string;
@@ -37,7 +35,7 @@ export default function FactoryComponent({
       const skill = appData.skills.find((skill) => skill.id === id);
       if (!skill) {
         throw Error(
-          `Skill ID ${id} does not have a corresponding definition in data.`
+          `Skill ID ${id} does not have a corresponding definition in data.`,
         );
       }
       return skill;
@@ -84,7 +82,7 @@ export default function FactoryComponent({
 }
 
 export function renderFactoryComponents(
-  content?: Record<string, any> | null
+  content?: Record<string, any> | null,
 ): JSX.Element[] {
   if (!content) {
     return [];

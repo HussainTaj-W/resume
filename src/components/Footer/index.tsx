@@ -1,6 +1,5 @@
-import { Box, Center, Divider, Link, Text } from "@chakra-ui/react";
-
 import IFooter from "@/types/footer";
+import { Box, Center, Divider, Link, Text } from "@chakra-ui/react";
 
 import styles from "./styles.module.scss";
 

@@ -1,6 +1,5 @@
-import { Box, Heading } from "@chakra-ui/react";
-
 import { renderFactoryComponents } from "@/utils/factory";
+import { Box, Heading } from "@chakra-ui/react";
 
 import styles from "./styles.module.scss";
 

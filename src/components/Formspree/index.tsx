@@ -11,7 +11,7 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
-import { useForm, ValidationError } from "@formspree/react";
+import { ValidationError, useForm } from "@formspree/react";
 
 import styles from "./styles.module.scss";
 

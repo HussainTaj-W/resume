@@ -1,7 +1,6 @@
-import { Box, Text, Image, Progress, Tag } from "@chakra-ui/react";
-
 import TooltipTouch from "@/components/TooltipTouch";
 import ISkill from "@/types/skill";
+import { Box, Image, Progress, Tag, Text } from "@chakra-ui/react";
 
 import styles from "./styles.module.scss";
 

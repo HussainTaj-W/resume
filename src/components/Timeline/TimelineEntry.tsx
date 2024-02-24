@@ -1,7 +1,6 @@
+import { renderFactoryComponents } from "@/utils/factory";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Box, Heading, Link, Text } from "@chakra-ui/react";
-
-import { renderFactoryComponents } from "@/utils/factory";
 
 import styles from "./styles.module.scss";
 

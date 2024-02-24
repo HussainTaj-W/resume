@@ -1,6 +1,5 @@
+import { Link, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 import { ReactMarkdownProps } from "react-markdown/lib/complex-types";
-
-import { ListItem, UnorderedList, Text, Link } from "@chakra-ui/react";
 
 const COMPONENT_MAP = new Map<string, React.ComponentType>([
   ["p", Text],

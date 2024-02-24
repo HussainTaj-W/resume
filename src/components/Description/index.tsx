@@ -1,8 +1,7 @@
-import { useState } from "react";
-import ReactMarkdown from "react-markdown";
-
 import { Box, Button } from "@chakra-ui/react";
 import Collapse from "@kunukn/react-collapse";
+import { useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 import { HTML_TO_CHAKRA_COMPONENTS_MAP } from "./markdown-utils";
 import styles from "./styles.module.scss";

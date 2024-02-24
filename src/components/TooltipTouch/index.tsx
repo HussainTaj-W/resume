@@ -1,6 +1,5 @@
-import { ReactNode, useState } from "react";
-
 import { Box, Tooltip } from "@chakra-ui/react";
+import { ReactNode, useState } from "react";
 
 const TooltipTouch = ({
   children,
