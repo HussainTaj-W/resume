@@ -51,7 +51,7 @@
     "rollup-plugin-gzip": "^3.1.0",
     "rollup-plugin-import-yaml": "^0.0.6",
     "sass": "^1.66.1",
-    "typescript": "^5.1.6",
+    "typescript": "^5.3.3",
     "vite": "^4.4.12",
     "vite-plugin-compression2": "^0.10.5",
     "vite-plugin-eslint": "^1.8.1",
