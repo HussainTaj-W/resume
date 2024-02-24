@@ -60,7 +60,6 @@ function Formspree({ id }: FormspreeProps) {
           <Textarea id="message" name="message" placeholder="Message" />
           <FormErrorMessage>
             <ValidationError
-              debug
               prefix="Message"
               field="message"
               errors={state.errors}
