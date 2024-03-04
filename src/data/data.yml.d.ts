@@ -11,6 +11,10 @@ declare const data: {
         src: string;
         alt: string;
       };
+      rive_ExampleKey: {
+        src: string;
+        stateMachines: string;
+      };
     };
     footer: {
       attributions: {

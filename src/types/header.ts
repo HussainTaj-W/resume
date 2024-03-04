@@ -4,6 +4,10 @@ export default interface IHeader {
   name: string;
   title: string;
   years: string;
-  tagline: string;
-  image: IImage;
+  tagline?: string;
+  image?: IImage;
+  rive?: {
+    src: string;
+    stateMachines: string;
+  };
 }

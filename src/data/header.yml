@@ -5,3 +5,6 @@ tagline: Engineering innovation through passion and dedication.
 image:
   src: assets/images/avatar.jpg
   alt: Alex Johnson photo
+rive_ExampleKey:
+  src: https://cdn.rive.app/animations/vehicles.riv
+  stateMachines: bumpy

@@ -2,13 +2,14 @@ import { ActiveSectionNameContext } from "@/components/ResumeContext";
 import IHeader from "@/types/header";
 import { scrollToName } from "@/utils/scroll-handler";
 import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
+import Rive from "@rive-app/react-canvas-lite";
 import React, { useContext } from "react";
 
 import styles from "./styles.module.scss";
 
 export type HeaderProps = IHeader & React.HTMLAttributes<HTMLElement>;
 
-function Header(props: HeaderProps) {
+function Header({ name, title, years, image, tagline, rive }: HeaderProps) {
   const { setActiveSectionName } = useContext(ActiveSectionNameContext);
 
   return (
@@ -18,7 +19,7 @@ function Header(props: HeaderProps) {
           display="flex"
           m={4}
           alignItems="center"
-          justifyContent="space-between"
+          justifyContent="center"
           flexDirection={{
             base: "column-reverse",
             lg: "row",
@@ -35,7 +36,7 @@ function Header(props: HeaderProps) {
             }}
           >
             <Heading as="h1" size="2xl" textAlign="center">
-              {props.name}
+              {name}
             </Heading>
             <Text
               as="strong"
@@ -46,30 +47,46 @@ function Header(props: HeaderProps) {
               display="block"
               textAlign="center"
             >
-              {props.title}
+              {title}
             </Text>
-            <Text as="em">{props.years}</Text>
+            <Text as="em">{years}</Text>
           </Box>
-          <Box>
-            <Image
-              src={props.image.src}
-              alt={props.image.alt}
-              objectFit="cover"
-              ml={2}
+          {image && (
+            <Box>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                objectFit="cover"
+                ml={2}
+                boxSize={{
+                  sm: "150px",
+                  md: "200px",
+                  lg: "300px",
+                }}
+                userSelect="none"
+                height={100}
+                width={100}
+              />
+            </Box>
+          )}
+          {rive && (
+            <Box
               boxSize={{
-                sm: "150px",
-                md: "200px",
+                sm: "200px",
+                md: "250px",
                 lg: "300px",
               }}
-              userSelect="none"
-              height={100}
-              width={100}
-            />
-          </Box>
+            >
+              <Rive src={rive.src} stateMachines={rive.stateMachines} />
+            </Box>
+          )}
         </Box>
-        <Text fontSize="2xl" textAlign="center" my={4}>
-          &ldquo;{props.tagline}&rdquo;
-        </Text>
+        {tagline && (
+          <Text fontSize="2xl" textAlign="center" my={4}>
+            &ldquo;{tagline}&rdquo;
+          </Text>
+        )}
+
         <Box m="auto">
           <Button
             variant="solid"
