@@ -3,12 +3,13 @@ import IHeader from "@/types/header";
 import { scrollToName } from "@/utils/scroll-handler";
 import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
 import React, { useContext } from "react";
+import Rive from '@rive-app/react-canvas';
 
 import styles from "./styles.module.scss";
 
 export type HeaderProps = IHeader & React.HTMLAttributes<HTMLElement>;
 
-function Header({ name, title, years, image, tagline }: HeaderProps) {
+function Header({ name, title, years, image, tagline, rive }: HeaderProps) {
   const { setActiveSectionName } = useContext(ActiveSectionNameContext);
 
   return (
@@ -71,6 +72,20 @@ function Header({ name, title, years, image, tagline }: HeaderProps) {
             )
           }
 
+          {
+            rive && (
+              <Box boxSize={{
+                sm: "150px",
+                md: "200px",
+                lg: "300px",
+              }}>
+                <Rive
+                  src={rive.src}
+                  stateMachines={rive.stateMachines}
+                />
+              </Box>
+            )
+          }
         </Box>
         <Text fontSize="2xl" textAlign="center" my={4}>
           &ldquo;{tagline}&rdquo;

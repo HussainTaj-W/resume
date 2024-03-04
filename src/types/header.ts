@@ -6,4 +6,8 @@ export default interface IHeader {
   years: string;
   tagline: string;
   image: IImage;
+  rive: {
+    src: string,
+    stateMachines: string,
+  }
 }
