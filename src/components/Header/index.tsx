@@ -18,7 +18,7 @@ function Header({ name, title, years, image, tagline }: HeaderProps) {
           display="flex"
           m={4}
           alignItems="center"
-          justifyContent="space-between"
+          justifyContent="center"
           flexDirection={{
             base: "column-reverse",
             lg: "row",
