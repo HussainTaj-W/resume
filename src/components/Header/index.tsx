@@ -72,6 +72,7 @@ function Header({ name, title, years, image, tagline, rive }: HeaderProps) {
           {rive && (
             <Box
               boxSize={{
+                base: "200px",
                 sm: "200px",
                 md: "250px",
                 lg: "300px",
