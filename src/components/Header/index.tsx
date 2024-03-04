@@ -8,7 +8,7 @@ import styles from "./styles.module.scss";
 
 export type HeaderProps = IHeader & React.HTMLAttributes<HTMLElement>;
 
-function Header(props: HeaderProps) {
+function Header({ name, title, years, image, tagline }: HeaderProps) {
   const { setActiveSectionName } = useContext(ActiveSectionNameContext);
 
   return (
@@ -35,7 +35,7 @@ function Header(props: HeaderProps) {
             }}
           >
             <Heading as="h1" size="2xl" textAlign="center">
-              {props.name}
+              {name}
             </Heading>
             <Text
               as="strong"
@@ -46,29 +46,34 @@ function Header(props: HeaderProps) {
               display="block"
               textAlign="center"
             >
-              {props.title}
+              {title}
             </Text>
-            <Text as="em">{props.years}</Text>
+            <Text as="em">{years}</Text>
           </Box>
-          <Box>
-            <Image
-              src={props.image.src}
-              alt={props.image.alt}
-              objectFit="cover"
-              ml={2}
-              boxSize={{
-                sm: "150px",
-                md: "200px",
-                lg: "300px",
-              }}
-              userSelect="none"
-              height={100}
-              width={100}
-            />
-          </Box>
+          {
+            image && (
+              <Box>
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  objectFit="cover"
+                  ml={2}
+                  boxSize={{
+                    sm: "150px",
+                    md: "200px",
+                    lg: "300px",
+                  }}
+                  userSelect="none"
+                  height={100}
+                  width={100}
+                />
+              </Box>
+            )
+          }
+
         </Box>
         <Text fontSize="2xl" textAlign="center" my={4}>
-          &ldquo;{props.tagline}&rdquo;
+          &ldquo;{tagline}&rdquo;
         </Text>
         <Box m="auto">
           <Button
