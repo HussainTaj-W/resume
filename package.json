@@ -19,7 +19,7 @@
     "@chakra-ui/react": "^2.8.2",
     "@formspree/react": "^2.5.1",
     "@kunukn/react-collapse": "^2.2.10",
-    "@rive-app/react-canvas": "^4.8.3",
+    "@rive-app/react-canvas-lite": "^4.8.3",
     "deep-copy-ts": "^0.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

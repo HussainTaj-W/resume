@@ -2,8 +2,8 @@ import { ActiveSectionNameContext } from "@/components/ResumeContext";
 import IHeader from "@/types/header";
 import { scrollToName } from "@/utils/scroll-handler";
 import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
+import Rive from "@rive-app/react-canvas-lite";
 import React, { useContext } from "react";
-import Rive from '@rive-app/react-canvas';
 
 import styles from "./styles.module.scss";
 
@@ -51,45 +51,42 @@ function Header({ name, title, years, image, tagline, rive }: HeaderProps) {
             </Text>
             <Text as="em">{years}</Text>
           </Box>
-          {
-            image && (
-              <Box>
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  objectFit="cover"
-                  ml={2}
-                  boxSize={{
-                    sm: "150px",
-                    md: "200px",
-                    lg: "300px",
-                  }}
-                  userSelect="none"
-                  height={100}
-                  width={100}
-                />
-              </Box>
-            )
-          }
-
-          {
-            rive && (
-              <Box boxSize={{
-                sm: "150px",
-                md: "200px",
+          {image && (
+            <Box>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                objectFit="cover"
+                ml={2}
+                boxSize={{
+                  sm: "150px",
+                  md: "200px",
+                  lg: "300px",
+                }}
+                userSelect="none"
+                height={100}
+                width={100}
+              />
+            </Box>
+          )}
+          {rive && (
+            <Box
+              boxSize={{
+                sm: "200px",
+                md: "250px",
                 lg: "300px",
-              }}>
-                <Rive
-                  src={rive.src}
-                  stateMachines={rive.stateMachines}
-                />
-              </Box>
-            )
-          }
+              }}
+            >
+              <Rive src={rive.src} stateMachines={rive.stateMachines} />
+            </Box>
+          )}
         </Box>
-        <Text fontSize="2xl" textAlign="center" my={4}>
-          &ldquo;{tagline}&rdquo;
-        </Text>
+        {tagline && (
+          <Text fontSize="2xl" textAlign="center" my={4}>
+            &ldquo;{tagline}&rdquo;
+          </Text>
+        )}
+
         <Box m="auto">
           <Button
             variant="solid"
