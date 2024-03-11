@@ -36,7 +36,7 @@
     "@types/react-scroll": "^1.8.7",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
-    "@vheemstra/vite-plugin-imagemin": "^1.1.5",
+    "@vheemstra/vite-plugin-imagemin": "^2.0.0",
     "@vitejs/plugin-react": "^4.2.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.57.0",
