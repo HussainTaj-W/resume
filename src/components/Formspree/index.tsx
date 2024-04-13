@@ -20,7 +20,7 @@ export interface FormspreeProps {
   response?: string;
 }
 
-function Formspree({ id }: FormspreeProps) {
+function Formspree({ id, response: successText }: FormspreeProps) {
   const [state, handleSubmit] = useForm(id);
 
   let response = <></>;
@@ -36,7 +36,7 @@ function Formspree({ id }: FormspreeProps) {
         h="100%"
       >
         <CheckCircleIcon display="block" color="green.400" />
-        <Text>{response}</Text>
+        <Text>{successText}</Text>
       </Box>
     );
   }
