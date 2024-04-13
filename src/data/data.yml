@@ -48,6 +48,12 @@ app:
             - work:
                 # prettier-ignore
                 (( include ./src/data/portfolio/an_app.yml ))
+            - work:
+                # prettier-ignore
+                (( include ./src/data/portfolio/a_website.yml ))
+            - work:
+                # prettier-ignore
+                (( include ./src/data/portfolio/an_app.yml ))
 
       - id: contact
         title: Contact

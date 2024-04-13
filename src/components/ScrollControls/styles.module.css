@@ -1,0 +1,24 @@
+.controls {
+  position: relative;
+  padding-left: 1em;
+  padding-right: 2em;
+}
+
+.controls button {
+  position: absolute;
+  z-index: 1;
+  border-radius: 2em;
+  opacity: 0.8;
+
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.controls button:first-child {
+  left: 0;
+}
+
+.controls button:last-child {
+  right: 1em;
+}
