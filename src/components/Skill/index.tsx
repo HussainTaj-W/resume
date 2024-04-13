@@ -10,7 +10,7 @@ interface Props {
 }
 
 function Skill({ data, type = "full" }: Props) {
-  const iconSize = type === "compact" ? "1em" : "1.5em";
+  const iconSize = type === "compact" ? "1em" : "1.3em";
   const isCompact = type === "compact";
   const isIcon = type === "icon";
   const isFull = type === "full";
