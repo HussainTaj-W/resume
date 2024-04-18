@@ -36,7 +36,3 @@
 *::-webkit-scrollbar-thumb:active {
   background-color: #b0bec5;
 }
-
-html {
-  scroll-behavior: smooth;
-}
