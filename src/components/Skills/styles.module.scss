@@ -35,7 +35,7 @@
   max-width: 200px;
 }
 
-.skill-collapsed:nth-child(n):hover {
+.skill-collapsed:not(:last-child):hover {
   margin-right: 0;
   max-width: 200px;
   cursor: default;

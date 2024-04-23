@@ -195,6 +195,7 @@ declare const data: {
                       skills: {
                         type: string;
                         references: string;
+                        collapsible: boolean;
                         content: number[];
                       };
                     };

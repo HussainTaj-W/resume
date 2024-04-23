@@ -31,6 +31,7 @@ function Skill({ data, type = "full" }: Props) {
         flexDirection="column"
         justifyContent="space-between"
         className={styles.skill}
+        onClick={(event) => event.stopPropagation()}
       >
         <Box display="flex" alignItems="center">
           <Image

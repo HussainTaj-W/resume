@@ -23,7 +23,7 @@ export default function Collection({ content }: CollectionProps) {
       {content.map(({ title, featured, ...rest }, index) => (
         <AccordionItem key={`item-${title}-${index}`}>
           <AccordionButton>
-            <Wrap flex={1}>
+            <Box flex={1} textAlign="left">
               <Heading
                 as="h2"
                 fontSize="md"
@@ -33,13 +33,17 @@ export default function Collection({ content }: CollectionProps) {
               >
                 {title}
               </Heading>
-              <Box my="auto">
-                {...featured ? renderFactoryComponents(featured) : []}
-              </Box>
-              <Box my="auto" ml={featured ? -1 : -3}>
-                ...
-              </Box>
-            </Wrap>
+              <Wrap>
+                {featured && (
+                  <Box my="auto">
+                    {...featured ? renderFactoryComponents(featured) : []}
+                  </Box>
+                )}
+                <Box my="auto" ml={featured ? -1 : 0}>
+                  ...
+                </Box>
+              </Wrap>
+            </Box>
             <AccordionIcon />
           </AccordionButton>
 

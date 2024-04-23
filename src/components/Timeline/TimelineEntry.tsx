@@ -44,6 +44,7 @@ function TimelineEntry({ content }: TimelineEntryProps) {
                   target="_blank"
                   ml={1}
                   aria-label={`Open reference for ${institution.name}`}
+                  onClick={(event) => event.stopPropagation()}
                 >
                   <ExternalLinkIcon boxSize="0.8em" verticalAlign="center" />
                 </Link>
