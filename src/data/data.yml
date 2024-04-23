@@ -59,7 +59,7 @@ app:
         title: Contact
         row:
           content:
-            collection:
+            list:
               content:
                 # prettier-ignore
                 (( include ./src/data/contact/contacts.yml ))

@@ -8,6 +8,7 @@ import Formspree, { FormspreeProps } from "@/components/Formspree";
 import Gallery, { GalleryProps } from "@/components/Gallery";
 import Header, { HeaderProps } from "@/components/Header";
 import Links, { LinksProps } from "@/components/Links";
+import List, { ListProps } from "@/components/List";
 import Row, { RowProps } from "@/components/Row";
 import Sections, { SectionsProps } from "@/components/Sections";
 import Skills, { SkillsProps } from "@/components/Skills";
@@ -75,6 +76,8 @@ export default function FactoryComponent({
       return <CatWalk {...(data as CatWalkProps)} />;
     case "column":
       return <Column {...(data as ColumnProps)} />;
+    case "list":
+      return <List {...(data as ListProps)} />;
 
     default:
       throw new Error(`Unknown component name: ${name}`);

@@ -43,10 +43,35 @@ declare const data: {
                     skills: {
                       type: string;
                       references: string;
+                      collapsible: boolean;
                       content: number[];
                     };
                     description: {
                       format: string;
+                      content: string;
+                    };
+                    gallery: {
+                      content: {
+                        src: string;
+                        alt: string;
+                      }[];
+                    };
+                  }
+                | {
+                    from: string;
+                    to: string;
+                    institution: {
+                      name: string;
+                      uri: string;
+                    };
+                    title: string;
+                    skills: {
+                      type: string;
+                      references: string;
+                      collapsible: boolean;
+                      content: number[];
+                    };
+                    description: {
                       content: string;
                     };
                     gallery: {
@@ -98,6 +123,30 @@ declare const data: {
                     skills: {
                       type: string;
                       references: string;
+                      collapsible: boolean;
+                      content: number[];
+                    };
+                    description: {
+                      content: string;
+                    };
+                    gallery: {
+                      content: {
+                        src: string;
+                        alt: string;
+                      }[];
+                    };
+                  }
+                | {
+                    from: string;
+                    to: string;
+                    institution: {
+                      name: string;
+                      uri: string;
+                    };
+                    title: string;
+                    skills: {
+                      type: string;
+                      references: string;
                       content: number[];
                     };
                     description: {
@@ -134,14 +183,31 @@ declare const data: {
             id: string;
             title: string;
             collection: {
-              content: {
-                title: string;
-                skills: {
-                  type: string;
-                  references: string;
-                  content: number[];
-                };
-              }[];
+              content: (
+                | {
+                    title: string;
+                    skills: {
+                      type: string;
+                      references: string;
+                      content: number[];
+                    };
+                    featured: {
+                      skills: {
+                        type: string;
+                        references: string;
+                        content: number[];
+                      };
+                    };
+                  }
+                | {
+                    title: string;
+                    skills: {
+                      type: string;
+                      references: string;
+                      content: number[];
+                    };
+                  }
+              )[];
             };
           }
         | {
@@ -249,7 +315,7 @@ declare const data: {
             title: string;
             row: {
               content: {
-                collection: {
+                list: {
                   content: (
                     | {
                         contact: {
