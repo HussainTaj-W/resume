@@ -34,7 +34,7 @@
     "@types/react-dom": "^18.2.22",
     "@types/react-modal-image": "^2.6.3",
     "@types/react-scroll": "^1.8.10",
-    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.7.0",
     "@vheemstra/vite-plugin-imagemin": "^2.0.0",
     "@vitejs/plugin-react": "^4.2.1",
