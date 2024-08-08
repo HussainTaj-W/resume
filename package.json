@@ -56,6 +56,6 @@
     "vite": "^5.2.10",
     "vite-plugin-compression2": "^1.1.0",
     "vite-plugin-eslint": "^1.8.1",
-    "vite-plugin-static-copy": "^1.0.2"
+    "vite-plugin-static-copy": "^1.0.6"
   }
 }
