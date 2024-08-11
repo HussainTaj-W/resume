@@ -18,7 +18,7 @@
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
     "@formspree/react": "^2.5.1",
-    "@kunukn/react-collapse": "^2.2.10",
+    "@kunukn/react-collapse": "^3.0.15",
     "@rive-app/react-canvas-lite": "^4.13.6",
     "deep-copy-ts": "^0.5.4",
     "react": "^18.2.0",
