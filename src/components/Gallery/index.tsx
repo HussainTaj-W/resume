@@ -15,7 +15,7 @@ function Gallery({ content, height = 100 }: GalleryProps) {
   const ref = useRef(null);
 
   return (
-    <ScrollControls containerRef={ref}>
+    <ScrollControls containerRef={ref} stepOffset={157.5}>
       <Box className={styles.gallery} my={1} userSelect="none" ref={ref}>
         {content.map((image, index) => (
           <ModalImage

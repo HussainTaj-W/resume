@@ -7,11 +7,13 @@ import styles from "./styles.module.css";
 export interface ScrollControlsProps {
   containerRef: MutableRefObject<null>;
   children: React.ReactElement;
+  stepOffset?: number;
 }
 
 export default function CatWalk({
   containerRef,
   children,
+  stepOffset = 300,
 }: ScrollControlsProps) {
   const handleScroll = useCallback(
     (value: number) => {
@@ -30,13 +32,16 @@ export default function CatWalk({
 
   return (
     <Box className={styles.controls}>
-      <IconButton aria-label="previous" onClick={() => handleScroll(-300)}>
+      <IconButton
+        aria-label="previous"
+        onClick={() => handleScroll(-stepOffset)}
+      >
         <ChevronLeftIcon />
       </IconButton>
 
       {children}
 
-      <IconButton aria-label="next" onClick={() => handleScroll(300)}>
+      <IconButton aria-label="next" onClick={() => handleScroll(stepOffset)}>
         <ChevronRightIcon />
       </IconButton>
     </Box>
