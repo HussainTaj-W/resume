@@ -7,6 +7,8 @@ on:
       - completed
     branches:
       - main
+  
+  push:
 
   workflow_dispatch:
 jobs:
@@ -35,6 +37,7 @@ jobs:
         env:
           REPORT_JSON: ${{ steps.lighthouse.outputs.manifest }}
         run: |
+          echo $(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(data[2]['summary'])")
           performance=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(round(data[2]['summary']['performance']*100))")
           accessibility=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(round(data[2]['summary']['accessibility']*100))")
           bestPractices=$(python -c "import json; data = json.loads(${REPORT_JSON@Q}); print(round(data[2]['summary']['best-practices']*100))")
