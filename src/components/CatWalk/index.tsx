@@ -12,7 +12,7 @@ export default function CatWalk({ content }: CatWalkProps) {
   const ref = useRef(null);
 
   return (
-    <ScrollControls containerRef={ref}>
+    <ScrollControls containerRef={ref} stepOffset={315}>
       <Box ref={ref} whiteSpace="nowrap" overflowX="auto">
         {content?.map((item, index) => (
           <Box
