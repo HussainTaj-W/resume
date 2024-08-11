@@ -4,7 +4,7 @@ import jsYaml from "js-yaml";
 
 test.describe("navigation", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("http://127.0.0.1:5173/");
+    await page.goto("http://localhost:5173/");
   });
 
   test("sidebar navigation should take user to appropriate sections", async ({
