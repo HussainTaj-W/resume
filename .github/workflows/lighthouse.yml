@@ -23,7 +23,7 @@ jobs:
           token: ${{ secrets.GH_PAT }}
 
       - name: Audit Resume using Lighthouse
-        uses: treosh/lighthouse-ci-action@v10
+        uses: treosh/lighthouse-ci-action@v12
         id: lighthouse
         with:
           urls: ${{ steps.pages_conf.outputs.base_url }}/
