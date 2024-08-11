@@ -1,5 +1,5 @@
 import { Box, Button } from "@chakra-ui/react";
-import { Collapse } from '@kunukn/react-collapse'
+import { Collapse } from "@kunukn/react-collapse";
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
