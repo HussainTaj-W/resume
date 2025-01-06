@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
-    "@chakra-ui/react": "^2.8.2",
+    "@chakra-ui/react": "^3.2.5",
     "@formspree/react": "^2.5.1",
     "@kunukn/react-collapse": "^3.0.15",
     "@rive-app/react-canvas-lite": "^4.13.8",
